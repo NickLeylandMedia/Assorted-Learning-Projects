@@ -1,1 +1,180 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+.darkText h1, .darkText h2, .darkText h3, .darkText h4, .darkText h5, .darkText h6, .darkText p {
+  color: black;
+}
+
+.lightText h1, .lightText h2, .lightText h3, .lightText h4, .lightText h5, .lightText h6, .lightText p {
+  color: white;
+}
+
+.bold {
+  font-weight: bolder;
+}
+
+.pt5 {
+  opacity: 0.5;
+}
+
+.pt7 {
+  opacity: 0.7;
+}
+
+.pt9 {
+  opacity: 0.9;
+}
+
+#buttonChangesTextColorSect {
+  width: 100%;
+  border: 1px solid black;
+  padding: 1em;
+}
+
+#buttonChangesTextColorCont {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#changeTextColorHeaderCont {
+  width: 33%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#changeTextColorButtonCont {
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#changeTextColor {
+  width: 100%;
+}
+
+#buttonChangesImageSect {
+  width: 100%;
+  padding: 1em;
+}
+
+#buttonChangesImageCont {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#buttonChangesImageHeaderCont {
+  width: 33%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#buttonChangesImageImageCont {
+  width: 40%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#changingImage {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+}
+
+#buttonChangesImageButtonCont {
+  text-align: center;
+}
+
+#buttonPushesToArraySect {
+  width: 100%;
+  border: 1px solid black;
+  padding: 1em;
+}
+
+#buttonPushesToArrayCont {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#buttonPushesToArrayHeaderCont {
+  width: 33%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#buttonPushesToArrayButtonCont {
+  min-width: 210px;
+  max-width: 220px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#pushToArrayBasic {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+#changeTextColor {
+  width: 100%;
+}
+
+#buttonsOperateValueSect {
+  width: 100%;
+}
+
+#buttonsOperateValueCont {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#buttonsOperateValueHeaderCont {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#buttonValueCont {
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#buttonsOperateValue {
+  width: 60%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.basicOperandButton {
+  width: 50px;
+  height: 20px;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=style.css.map */

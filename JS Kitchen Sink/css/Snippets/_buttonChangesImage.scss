@@ -1,0 +1,33 @@
+#buttonChangesImageSect {
+    width: 100%;
+    padding: 1em;
+}
+
+#buttonChangesImageCont {
+    width: 80%;
+    @include autoMargins();
+}
+
+#buttonChangesImageHeaderCont {
+    width: 33%;
+    @include autoMargins();
+    text-align: center;
+}
+
+#buttonChangesImageImageCont {
+    width: 40%;
+    height: auto;
+    @include autoMargins();
+}
+
+#changingImage {
+    width: 150px;
+    height: auto;
+    display: block;
+    @include autoMargins();
+    padding: 1em;
+}
+
+#buttonChangesImageButtonCont{
+    text-align: center;
+}

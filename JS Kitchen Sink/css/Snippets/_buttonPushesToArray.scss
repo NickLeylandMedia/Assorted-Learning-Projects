@@ -1,0 +1,32 @@
+#buttonPushesToArraySect {
+    width: 100%;
+    border: 1px solid black;
+    padding: 1em;
+}
+
+#buttonPushesToArrayCont {
+    width: 80%;
+    @include autoMargins();     
+}
+
+#buttonPushesToArrayHeaderCont {
+    width: 33%;
+    @include autoMargins();
+    text-align: center;
+}
+
+#buttonPushesToArrayButtonCont {
+    min-width: 210px;
+    max-width: 220px;
+    @include autoMargins();
+    text-align: center;
+}
+
+#pushToArrayBasic {
+    @include autoMargins();
+    width: 100%;
+}
+
+#changeTextColor {
+    width: 100%;
+}

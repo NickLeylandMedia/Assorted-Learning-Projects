@@ -1,0 +1,26 @@
+#buttonChangesTextColorSect {
+    width: 100%;
+    border: 1px solid black;
+    padding: 1em;
+}
+
+#buttonChangesTextColorCont {
+    width: 80%;
+    @include autoMargins();     
+}
+
+#changeTextColorHeaderCont {
+    width: 33%;
+    @include autoMargins();
+    text-align: center;
+}
+
+#changeTextColorButtonCont {
+    width: 25%;
+    @include autoMargins();
+    text-align: center;
+}
+
+#changeTextColor {
+    width: 100%;
+}
