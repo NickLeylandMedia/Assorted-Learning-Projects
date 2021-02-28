@@ -1,0 +1,42 @@
+#buttonSlideshowBasicSect {
+    width: 100%;
+    padding: 1em;
+}
+
+#buttonSlideshowBasicCont {
+    width: 80%;
+    @include autoMargins();
+}
+
+#buttonSlideshowBasicHeaderCont {
+    width: 33%;
+    @include autoMargins();
+    text-align: center;
+}
+
+#buttonSlideshowImageCont {
+    width: 60%;
+    @include autoMargins();
+}
+
+#buttonSlideshowImage {
+    width: 150px;
+    height: auto;
+    @include autoMargins();
+    display: block;
+    padding: 1em;
+}
+
+#buttonSlideshowBasicButtonCont {
+    width: 50%;
+    @include autoMargins();
+    display: flex;
+    justify-content: center;
+}
+
+.slideshowButton {
+    width: 200px;
+    height: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}

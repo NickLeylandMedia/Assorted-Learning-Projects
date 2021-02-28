@@ -15,6 +15,12 @@
     text-align: center;
 }
 
+#buttonPushesToArrayArrayCont {
+    width: 30%;
+    @include autoMargins();
+    text-align: center;
+}
+
 #buttonPushesToArrayButtonCont {
     min-width: 210px;
     max-width: 220px;

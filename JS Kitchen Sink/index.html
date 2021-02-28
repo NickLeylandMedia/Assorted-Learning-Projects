@@ -37,7 +37,7 @@
         <h2 id="changeTextColorHeader">CHANGE COLOR OF TEXT WITH A BUTTON</h2>
       </div>
       <div id="changeTextColorButtonCont">
-        <button id="changeTextColor">CLICK ME</button>
+        <button id="changeTextColor" onclick="changeHeaderColor()">CLICK ME</button>
       </div>
     </div>
   </section>
@@ -51,18 +51,44 @@
         <img id="changingImage" src="./img/happy.png">
       </div>
       <div id="buttonChangesImageButtonCont">
-        <button id="changeImage">CLICK ME</button>
+        <button id="changeImage" onclick="changeImageBasic()">CLICK ME</button>
       </div>
     </div>
   </section>
 
-  <section id="buttonPushesToArraySect">
+  <section id="buttonSlideshowBasicSect">
+    <div id="buttonSlideshowBasicCont">
+      <div id="buttonSlideshowBasicHeaderCont">
+        <h2 id="buttonSlideshowBasicHeader">BASIC IMAGE SLIDESHOW (OPERATED WITH BUTTONS)</h2>
+      </div>
+      <div id="buttonSlideshowImageCont">
+        <img id="buttonSlideshowImage" src="./img/cheesy.png">
+      </div>
+      <div id="buttonSlideshowBasicButtonCont">
+        <button class="slideshowButton" id="slideshowBack">CLICK ME</button>
+        <button class="slideshowButton" id="slideshowForward">OR ME</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="displayArrayBasicSect">
+    <div id="displayArrayBasicCont">
+      <div id="displayArrayBasicHeaderCont">
+        <h2 id="displayArrayBasicHeader">BASIC ARRAY DISPLAY</h2>
+      </div>
+      <div id="displayArrayBasicDisplayCont">
+        <p id="basicArrayText"></p>
+      </div>
+    </div>
+  </section>
+
+    <section id="buttonPushesToArraySect">
     <div id="buttonPushesToArrayCont">
       <div id="buttonPushesToArrayHeaderCont">
         <h2 id="buttonPushesToArrayHeader">PUSH A VALUE TO AN ARRAY WITH A BUTTON</h2>
       </div>
-      <div id="buttonChangesImageImageCont">
-
+      <div id="buttonPushesToArrayArrayCont">
+        <p id="buttonPushesToArrayDisplay">PLACEHOLDER</p>
       </div>
       <div id="buttonPushesToArrayButtonCont">
         <button id="pushToArrayBasic">PUUUUUUUUUUSH!!</button>
@@ -80,11 +106,11 @@
       </div>
       <div id="buttonsOperateValue">
         <div class="basicOperandButtonCont"><button class="basicOperandButton" id="minusOneHundredBasic">-100 <</button></div>
-        <div class="basicOperandButtonCont"></div><button class="basicOperandButton" id="minusTenBasic">-10 <</button></div>
-        <div class="basicOperandButtonCont"></div><button class="basicOperandButton" id="minusOneBasic"><</button></div>
-        <div class="basicOperandButtonCont"></div><button class="basicOperandButton" id="plusOneBasic">></button></div>
-        <div class="basicOperandButtonCont"></div><button class="basicOperandButton" id="plusTenBasic">> +10</button></div>
-        <div class="basicOperandButtonCont"></div><button class="basicOperandButton" id="plusOneHundredBasic">> +100</button></div>
+        <div class="basicOperandButtonCont"><button class="basicOperandButton" id="minusTenBasic">-10 <</button></div>
+        <div class="basicOperandButtonCont"><button class="basicOperandButton" id="minusOneBasic">-1 <</button></div>
+        <div class="basicOperandButtonCont"><button class="basicOperandButton" id="plusOneBasic">> +1</button></div>
+        <div class="basicOperandButtonCont"><button class="basicOperandButton" id="plusTenBasic">> +10</button></div>
+        <div class="basicOperandButtonCont"><button class="basicOperandButton" id="plusOneHundredBasic">> +100</button></div>
       </div>
     </div>
   </section>
@@ -95,8 +121,7 @@
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/calculators.js"></script>
-
+  
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
