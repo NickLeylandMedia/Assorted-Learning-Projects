@@ -240,6 +240,191 @@
   margin-right: 10px;
 }
 
+#displayArrayBasicSect {
+  width: 100%;
+  padding: 1em;
+  border: 1px solid black;
+}
+
+#displayArrayBasicCont {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#displayArrayBasicHeaderCont {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#displayArrayBasicDisplayCont {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#displayArrayBasicButtonAreaCont {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.displayArrayBasicButtonCont {
+  margin: 5px;
+}
+
+#buttonPushesToArrayLoopSect {
+  width: 100%;
+  border: 1px solid black;
+  padding: 1em;
+}
+
+#buttonPushesToArrayLoopCont {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#buttonPushesToArrayLoopHeaderCont {
+  width: 33%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#buttonPushesToArrayLoopArrayCont {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#buttonPushesToArrayLoopDisplay {
+  word-break: break-all;
+}
+
+#buttonPushesToArrayLoopButtonCont {
+  min-width: 210px;
+  max-width: 220px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#pushToArrayLoopBasic {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+#applyClassWithButtonSect {
+  width: 100%;
+  padding: 1em;
+}
+
+#applyClassWithButtonCont {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#applyClassWithButtonHeaderCont {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#applyClassWithButtonImageCont {
+  width: 40%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#applyClassWithButtonButtonCont {
+  width: 25%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#applyImageClassButton {
+  height: 20px;
+  width: 66%;
+}
+
+#disableButtonSect {
+  width: 100%;
+  padding: 1em;
+  border: 1px solid black;
+}
+
+#disableButtonCont {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#disableButtonHeaderCont {
+  width: 50%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#disableButtonHeader {
+  width: 100%;
+}
+
+#toggledButton {
+  width: 33%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#toggledButtonTextCont {
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#buttonControls {
+  width: 33%;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.buttonControlCont {
+  margin: 1em;
+}
+
 body {
   width: 100%;
   height: 100%;

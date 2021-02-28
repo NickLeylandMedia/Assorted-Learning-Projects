@@ -1,0 +1,34 @@
+#displayArrayBasicSect {
+    width: 100%;
+    padding: 1em;
+    border: 1px solid black;
+}
+
+#displayArrayBasicCont {
+    width: 80%;
+    @include autoMargins();
+}
+
+#displayArrayBasicHeaderCont {
+    width: 50%;
+    @include autoMargins();
+    text-align: center;
+}
+
+#displayArrayBasicDisplayCont {
+    width: 50%;
+    @include autoMargins;
+    text-align: center;
+}
+
+#displayArrayBasicButtonAreaCont {
+    width: 50%;
+    @include autoMargins();
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.displayArrayBasicButtonCont {
+    margin: 5px;
+}

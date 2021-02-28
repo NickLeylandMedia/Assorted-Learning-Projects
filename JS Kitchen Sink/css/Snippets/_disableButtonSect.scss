@@ -1,0 +1,43 @@
+#disableButtonSect {
+    width: 100%;
+    padding: 1em;
+    border: 1px solid black;
+}
+
+#disableButtonCont {
+    width: 80%;
+    @include autoMargins;
+}
+
+#disableButtonHeaderCont {
+    width: 50%;
+    text-align: center;
+    @include autoMargins();
+}
+
+#disableButtonHeader {
+    width: 100%;
+}
+
+#toggledButton {
+    width: 33%;
+    @include autoMargins();
+    text-align: center;
+}
+
+#toggledButtonTextCont {
+    width: 20%;
+    @include autoMargins();
+    text-align: center;
+}
+
+#buttonControls {
+    width: 33%;
+    @include autoMargins();
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.buttonControlCont {
+    margin: 1em;
+}

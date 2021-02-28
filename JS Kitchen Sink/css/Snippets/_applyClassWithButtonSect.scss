@@ -1,0 +1,33 @@
+#applyClassWithButtonSect {
+    width: 100%;
+    padding: 1em;
+} 
+
+#applyClassWithButtonCont {
+    width: 80%;
+    @include autoMargins();
+}
+
+#applyClassWithButtonHeaderCont {
+    width: 50%;
+    @include autoMargins();
+    text-align: center;
+}
+
+#applyClassWithButtonImageCont {
+    width: 40%;
+    height: auto;
+    @include autoMargins();
+}
+
+#applyClassWithButtonButtonCont {
+    width: 25%;
+    height: auto;
+    @include autoMargins();
+    text-align: center;
+}
+
+#applyImageClassButton {
+    height: 20px;
+    width: 66%;
+}

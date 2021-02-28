@@ -1,0 +1,39 @@
+#buttonPushesToArrayLoopSect {
+    width: 100%;
+    border: 1px solid black;
+    padding: 1em;
+}
+
+#buttonPushesToArrayLoopCont {
+    width: 80%;
+    @include autoMargins();     
+}
+
+#buttonPushesToArrayLoopHeaderCont {
+    width: 33%;
+    @include autoMargins();
+    text-align: center;
+}
+
+#buttonPushesToArrayLoopArrayCont {
+    width: 30%;
+    @include autoMargins();
+    text-align: center;
+}
+
+#buttonPushesToArrayLoopDisplay {
+    word-break: break-all;
+}
+
+#buttonPushesToArrayLoopButtonCont {
+    min-width: 210px;
+    max-width: 220px;
+    @include autoMargins();
+    text-align: center;
+}
+
+#pushToArrayLoopBasic {
+    @include autoMargins();
+    width: 100%;
+}
+

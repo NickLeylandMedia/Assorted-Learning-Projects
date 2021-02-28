@@ -79,10 +79,14 @@
       <div id="displayArrayBasicDisplayCont">
         <p id="basicArrayText"></p>
       </div>
+      <div id="displayArrayBasicButtonAreaCont">
+        <div class="displayArrayBasicButtonCont"><button id="dispArray1" onclick="changeDisplayArrayBasicFWD()">Click me for example text!</button></div>
+        <div class="displayArrayBasicButtonCont"><button id="dispArray2" onclick="changeDisplayArrayBasicBCK()">Click me for sample text!</button></div>
+      </div>
     </div>
   </section>
 
-    <section id="buttonPushesToArraySect">
+  <section id="buttonPushesToArraySect">
     <div id="buttonPushesToArrayCont">
       <div id="buttonPushesToArrayHeaderCont">
         <h2 id="buttonPushesToArrayHeader">PUSH A VALUE TO AN ARRAY WITH A BUTTON</h2>
@@ -91,7 +95,21 @@
         <p id="buttonPushesToArrayDisplay">PLACEHOLDER</p>
       </div>
       <div id="buttonPushesToArrayButtonCont">
-        <button id="pushToArrayBasic">PUUUUUUUUUUSH!!</button>
+        <button id="pushToArrayBasic" onclick="pushValueToArrayBasic()">PUUUUUUUUUUSH!!</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="buttonPushesToArrayLoopSect">
+    <div id="buttonPushesToArrayLoopCont">
+      <div id="buttonPushesToArrayLoopHeaderCont">
+        <h2 id="buttonPushesToArrayLoopHeader">PUSH A VALUE TO AN ARRAY WITH A BUTTON (INCREMENTING)</h2>
+      </div>
+      <div id="buttonPushesToArrayLoopArrayCont">
+        <p id="buttonPushesToArrayLoopDisplay">PLACEHOLDER</p>
+      </div>
+      <div id="buttonPushesToArrayLoopButtonCont">
+        <button id="pushToArrayLoopBasic" onclick="pushValueToArrayLoopBased()">PUUUUUUUUUUSH!!</button>
       </div>
     </div>
   </section>
@@ -105,12 +123,44 @@
         <p id="buttonValue">VALUE</p>
       </div>
       <div id="buttonsOperateValue">
-        <div class="basicOperandButtonCont"><button class="basicOperandButton" id="minusOneHundredBasic">-100 <</button></div>
-        <div class="basicOperandButtonCont"><button class="basicOperandButton" id="minusTenBasic">-10 <</button></div>
-        <div class="basicOperandButtonCont"><button class="basicOperandButton" id="minusOneBasic">-1 <</button></div>
-        <div class="basicOperandButtonCont"><button class="basicOperandButton" id="plusOneBasic">> +1</button></div>
-        <div class="basicOperandButtonCont"><button class="basicOperandButton" id="plusTenBasic">> +10</button></div>
-        <div class="basicOperandButtonCont"><button class="basicOperandButton" id="plusOneHundredBasic">> +100</button></div>
+        <div class="basicOperandButtonCont"><button class="basicOperandButton" id="minusOneHundredBasic" onclick="minusOneHundred()">-100 <</button></div>
+        <div class="basicOperandButtonCont"><button class="basicOperandButton" id="minusTenBasic" onclick="minusTen()">-10 <</button></div>
+        <div class="basicOperandButtonCont"><button class="basicOperandButton" id="minusOneBasic" onclick="minusOne()">-1 <</button></div>
+        <div class="basicOperandButtonCont"><button class="basicOperandButton" id="plusOneBasic" onclick="plusOne()"> +1</button></div>
+        <div class="basicOperandButtonCont"><button class="basicOperandButton" id="plusTenBasic" onclick="plusTen()"> +10</button></div>
+        <div class="basicOperandButtonCont"><button class="basicOperandButton" id="plusOneHundredBasic" onclick="plusOneHundred()"> +100</button></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="applyClassWithButtonSect">
+    <div id="applyClassWithButtonCont">
+      <div id="applyClassWithButtonHeaderCont">
+        <h2>APPLY CLASS TO IMAGE WITH BUTTON</h2>
+      </div>
+      <div id="applyClassWithButtonImageCont">
+        <img src="">
+      </div>
+      <div id="applyClassWithButtonButtonCont">
+        <button id="applyImageClassButton">CHANGE IMAGE CLASS</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="disableButtonSect">
+    <div id="disableButtonCont">
+      <div id="disableButtonHeaderCont">
+        <h2 id="disableButtonHeader">ENABLE/DISABLE BUTTON</h2>
+      </div>
+      <div id="toggledButton">
+        <button id="controlledButton">I AM THE TOGGLED BUTTON</button>
+      </div>
+      <div id="toggledButtonTextCont">
+        <p id="toggledButtonText">PLACEHOLDER</p>
+      </div>
+      <div id="buttonControls">
+        <div class="buttonControlCont"><button id="enableButtonButton">Enable</button></div>
+        <div class="buttonControlCont"><button id="disableButtonButton">Disable</button></div>
       </div>
     </div>
   </section>
