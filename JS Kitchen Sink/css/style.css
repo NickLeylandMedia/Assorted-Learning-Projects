@@ -333,6 +333,7 @@
 #applyClassWithButtonSect {
   width: 100%;
   padding: 1em;
+  border: 1px solid black;
 }
 
 #applyClassWithButtonCont {
@@ -353,10 +354,24 @@
   height: auto;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+#classedImage {
+  width: 50%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.activeImage {
+  border: 15px solid cyan;
 }
 
 #applyClassWithButtonButtonCont {
-  width: 25%;
+  width: 50%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
@@ -405,6 +420,10 @@
   text-align: center;
 }
 
+#toggledButtonText {
+  display: none;
+}
+
 #buttonControls {
   width: 33%;
   margin-left: auto;
@@ -423,6 +442,163 @@
 
 .buttonControlCont {
   margin: 1em;
+}
+
+#renderJsonToDivSect {
+  width: 100%;
+  padding: 1em;
+}
+
+#renderJsonToDivCont {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#renderJsonToDivHeaderCont {
+  width: 33%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#renderJsonToDivDisplayCont {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.renderItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid black;
+  margin: 1em;
+  border-radius: 25px;
+}
+
+.renderItemHeader {
+  text-align: center;
+  width: 60%;
+}
+
+.renderItemText {
+  width: 40%;
+  text-align: center;
+  padding-right: 90px;
+  padding-top: 10px;
+}
+
+#jsonDisplayCont {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 1em;
+  border: 1px solid black;
+  border-radius: 25px;
+}
+
+#jsonDisplayButtonCont {
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  text-align: center;
+}
+
+#jsonDisplayButton {
+  height: 30px;
+  width: 100%;
+}
+
+#renderJsonToMultiSect {
+  width: 100%;
+  padding: 1em;
+}
+
+.renderJsonToMultiCont {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.renderJsonToMultiHeaderCont {
+  width: 50%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.renderJsonToMultiObjectCont {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.multiObject {
+  width: 33%;
+  border: 1px solid black;
+  padding: 2em;
+  margin: 3em;
+}
+
+.multiObjectItemItem p {
+  text-align: right;
+}
+
+.multiObjectItemItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#renderJsonToMultiButtonCont {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#renderJsonToMultiButton {
+  width: 100%;
+  height: 30px;
+}
+
+#dynamArrayButtonCont {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dynamArrayButton {
+  width: 100%;
+  height: 30px;
 }
 
 body {

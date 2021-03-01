@@ -139,10 +139,10 @@
         <h2>APPLY CLASS TO IMAGE WITH BUTTON</h2>
       </div>
       <div id="applyClassWithButtonImageCont">
-        <img src="">
+        <img class="" id="classedImage" src="./img/monalisa.jpg">
       </div>
       <div id="applyClassWithButtonButtonCont">
-        <button id="applyImageClassButton">CHANGE IMAGE CLASS</button>
+        <button id="applyImageClassButton" onclick="addClass()">CHANGE IMAGE CLASS</button>
       </div>
     </div>
   </section>
@@ -153,19 +153,101 @@
         <h2 id="disableButtonHeader">ENABLE/DISABLE BUTTON</h2>
       </div>
       <div id="toggledButton">
-        <button id="controlledButton">I AM THE TOGGLED BUTTON</button>
+        <button id="controlledButton" onclick="toggledButtonText()">I AM THE TOGGLED BUTTON</button>
       </div>
       <div id="toggledButtonTextCont">
-        <p id="toggledButtonText">PLACEHOLDER</p>
+        <p id="toggledButtonText">HEAR ME ROAR</p>
       </div>
       <div id="buttonControls">
-        <div class="buttonControlCont"><button id="enableButtonButton">Enable</button></div>
-        <div class="buttonControlCont"><button id="disableButtonButton">Disable</button></div>
+        <div class="buttonControlCont"><button id="enableButtonButton" onclick="enableButton()">Enable</button></div>
+        <div class="buttonControlCont"><button id="disableButtonButton" onclick="disableButton()">Disable</button></div>
       </div>
     </div>
   </section>
 
+  <section id="renderJsonToDivSect">
+    <div id="renderJsonToDivCont">
+      <div id="renderJsonToDivHeaderCont">
+        <h2 id="renderJsonToDivHeader">RENDER JSON TO DIV</h2>
+      </div>
+      <div id="renderJsonToDivDisplayCont">
+        <div class="renderItem"><h3 class="renderItemHeader">NAME:</h2><p class="renderItemText" id="renderName">PLACEHOLDER</p></div>
+        <div class="renderItem"><h3 class="renderItemHeader">AGE:</h2><p class="renderItemText" id="renderAge">PLACEHOLDER</p></div>
+        <div class="renderItem"><h3 class="renderItemHeader">LOCATION:</h2><p class="renderItemText" id="renderLocation">PLACEHOLDER</p></div>
+        <div class="renderItem"><h3 class="renderItemHeader">FAVORITE COLOR:</h2><p class="renderItemText" id="renderFavColor">PLACEHOLDER</p></div>
+        <div class="renderItem"><h3 class="renderItemHeader">FAVORITE FOOD:</h2><p class="renderItemText" id="renderFavFood">PLACEHOLDER</p></div>
+      </div>
+      <div id="jsonDisplayCont">
+        <p id="jsonDisplayText">JSON PLACEHOLDER</p>
+      </div>
+      <div id="jsonDisplayButtonCont">
+        <button id="jsonDisplayButton" onclick="renderJsonToDivs()">RENDER</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="renderJsonToMultiSect">
+    <div class="renderJsonToMultiCont">
+      <div class="renderJsonToMultiHeaderCont">
+        <h2 class="renderJsonToMultiHeader">RENDER JSON TO MULTI (STATIC)</h2>
+      </div>
+      <div class="renderJsonToMultiObjectCont">
+
+        <div class="multiObject">
+          <div class="multiObjectItem">
+            <div class="multiObjectItemItem"><h3 class="multiName" id="multiNameOne">NAME</h3></div>
+            <div class="multiObjectItemItem"><h4>Age</h4><p class="multiText" id="multiAgeOne">PH</p></div>
+            <div class="multiObjectItemItem"><h4>Location</h4><p class="multiText" id="multiLocationOne">PH</p></div>
+            <div class="multiObjectItemItem"><h4>Favorite Color</h4><p class="multiText" id="multiColorOne">PH</p></div>
+            <div class="multiObjectItemItem"><h4>Favorite Food</h4><p class="multiText" id="multiFoodOne">PH</p></div>
+          </div>
+        </div>
+
+        <div class="multiObject">
+          <div class="multiObjectItem">
+            <div class="multiObjectItemItem"><h3 class="multiName" id="multiNameTwo">NAME</h3></div>
+            <div class="multiObjectItemItem"><h4>Age</h4><p class="multiText" id="multiAgeTwo">PH</p></div>
+            <div class="multiObjectItemItem"><h4>Location</h4><p class="multiText" id="multiLocationTwo">PH</p></div>
+            <div class="multiObjectItemItem"><h4>Favorite Color</h4><p class="multiText" id="multiColorTwo">PH</p></div>
+            <div class="multiObjectItemItem"><h4>Favorite Food</h4><p class="multiText" id="multiFoodTwo">PH</p></div>
+          </div>
+        </div>
+          
+        <div class="multiObject">
+          <div class="multiObjectItem">
+            <div class="multiObjectItemItem"><h3 class="multiName" id="multiNameThree">NAME</h3></div>
+            <div class="multiObjectItemItem"><h4>Age</h4><p class="multiText" id="multiAgeThree">PH</p></div>
+            <div class="multiObjectItemItem"><h4>Location</h4><p class="multiText" id="multiLocationThree">PH</p></div>
+            <div class="multiObjectItemItem"><h4>Favorite Color</h4><p class="multiText" id="multiColorThree">PH</p></div>
+            <div class="multiObjectItemItem"><h4>Favorite Food</h4><p class="multiText" id="multiFoodThree">PH</p></div>
+          </div>
+        </div>
+
+      </div>
+      <div id="renderJsonToMultiButtonCont">
+        <button id="renderJsonToMultiButton" onclick="renderManyDivs()">RENDER</button>
+      </div>
+
+      <!--DYNAMIC JSON LISTING-->
+      <div id="renderJsonToMultiCont">
+        <div class="renderJsonToMultiHeaderCont">
+          <h2 class="renderJsonToMultiHeader">RENDER JSON TO MULTI (DYNAMIC)</h2>
+        </div>
+        <div class="renderJsonToMultiObjectCont" id="dynamCont">
+
+          
   
+        </div>
+        <div id="dynamArrayButtonCont">
+          <button class="dynamArrayButton" onclick="dynamicArray()">DYNAMIC ARRAY</button>
+        </div>
+      </div>  
+      
+    </div>
+
+
+  </section>
+ 
 
   <!-- Add your site or application content here -->
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
@@ -178,6 +260,23 @@
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+
+  <template id="person-template">
+
+    <div class="multiObject">
+      <div class="multiObjectItem">
+        <div class="multiObjectItemItem"><h3 class="dynamicName">NAME</h3></div>
+        <div class="multiObjectItemItem"><h4>Age</h4><p class="dynamicAge">PH</p></div>
+        <div class="multiObjectItemItem"><h4>Location</h4><p class="dynamicLocation">PH</p></div>
+        <div class="multiObjectItemItem"><h4>Favorite Color</h4><p class="dynamicColor">PH</p></div>
+        <div class="multiObjectItemItem"><h4>Favorite Food</h4><p class="dynamicFood">PH</p></div>
+      </div>
+    </div>
+
+  </template>
+
+
 </body>
 
 </html>

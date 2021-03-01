@@ -1,0 +1,64 @@
+#renderJsonToDivSect {
+    width: 100%;
+    padding: 1em;
+}
+
+#renderJsonToDivCont {
+    width: 80%;
+    @include autoMargins();
+}
+
+#renderJsonToDivHeaderCont {
+    width: 33%;
+    @include autoMargins();
+    text-align: center;
+}
+
+#renderJsonToDivDisplayCont {
+    width: 80%;
+    @include autoMargins();
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.renderItem {
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    margin: 1em;
+    border-radius: 25px;
+}
+
+.renderItemHeader {
+    text-align: center;
+    width: 60%;
+}
+
+.renderItemText {
+    width: 40%;
+    text-align: center;
+    padding-right: 90px;
+    padding-top: 10px;
+}
+
+#jsonDisplayCont {
+    width: 40%;
+    @include autoMargins();
+    text-align: center;
+    padding: 1em;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+#jsonDisplayButtonCont {
+    width: 25%;
+    @include autoMargins();
+    margin-top: 25px;
+    text-align: center;
+}
+
+#jsonDisplayButton {
+    height: 30px;
+    width: 100%;
+}

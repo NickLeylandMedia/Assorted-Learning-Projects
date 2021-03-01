@@ -1,0 +1,60 @@
+#renderJsonToMultiSect {
+    width: 100%;
+    padding: 1em;
+}
+
+.renderJsonToMultiCont {
+    width: 80%;
+    @include autoMargins();
+}
+
+.renderJsonToMultiHeaderCont {
+    width: 50%;
+    text-align: center;
+    @include autoMargins();
+}
+
+.renderJsonToMultiObjectCont {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.multiObject {
+    width: 33%;
+    border: 1px solid black;
+    padding: 2em;
+    margin: 3em;
+}
+
+
+.multiObjectItemItem p {
+    text-align: right;
+}
+
+.multiObjectItemItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#renderJsonToMultiButtonCont {
+    width: 50%;
+    @include autoMargins();
+}
+
+#renderJsonToMultiButton {
+    width: 100%;
+    height: 30px;
+}
+
+#dynamArrayButtonCont {
+    width: 50%;
+    @include autoMargins();
+}
+
+.dynamArrayButton {
+    width: 100%;
+    height: 30px;
+}

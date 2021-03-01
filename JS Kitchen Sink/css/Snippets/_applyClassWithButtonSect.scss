@@ -1,6 +1,7 @@
 #applyClassWithButtonSect {
     width: 100%;
     padding: 1em;
+    border: 1px solid black;
 } 
 
 #applyClassWithButtonCont {
@@ -18,10 +19,23 @@
     width: 40%;
     height: auto;
     @include autoMargins();
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+#classedImage {
+    width: 50%;
+    height: auto;
+    display: block;
+    @include autoMargins();
+}
+
+.activeImage {
+    border: 15px solid cyan;
 }
 
 #applyClassWithButtonButtonCont {
-    width: 25%;
+    width: 50%;
     height: auto;
     @include autoMargins();
     text-align: center;

@@ -30,6 +30,9 @@
     @include autoMargins();
     text-align: center;
 }
+#toggledButtonText {
+    display: none;
+}
 
 #buttonControls {
     width: 33%;
@@ -41,3 +44,4 @@
 .buttonControlCont {
     margin: 1em;
 }
+
