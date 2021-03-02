@@ -1,0 +1,57 @@
+#inputsPushToArraySect {
+    width: 100%;
+    padding: 1em;
+    border: 1px solid black;
+}
+
+#inputsPushToArrayCont {
+    width: 80%;
+    @include autoMargins();
+}
+
+#inputsPushToArrayHeaderCont {
+    width: 50%;
+    @include autoMargins();
+    text-align: center;
+}
+
+#inputsPushToArrayFormCont {
+    width: 100%;
+    @include autoMargins();
+    display: flex;
+    justify-content: center;
+}
+
+.formInput {
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+.formInput input {
+    margin: 1em;
+}
+
+.formInput label {
+    margin-top: 20px;
+    margin-right: 5em;
+}
+
+#arrayDisplayCont {
+    width: 50%;
+    @include autoMargins();
+    padding: 1em;
+    border: 1px solid black;
+}
+
+#arrayDisplayHeaderCont {
+    width: 80%;
+    @include autoMargins();
+    text-align: center;
+}
+
+.arrayDisplayTextCont {
+    width: 60%;
+    @include autoMargins();
+    text-align: center;
+}

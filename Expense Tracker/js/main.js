@@ -226,25 +226,6 @@ function dynamicArray() {
 
 }
 
-//INPUTS PUSH TO ARRAY
-var inputArray = []
-var inputName = document.getElementById('fname').value
-var inputAge = document.getElementById('inage').value
-var inputCity = document.getElementById('city').value
-
-function renderToDisplay() {
-    document.getElementById('arrayDisplayName').innerHTML = inputArray[0].Name;
-    document.getElementById('arrayDisplayAge').innerHTML = inputArray[0].Age;
-    document.getElementById('arrayDisplayCity').innerHTML = inputArray[0].City;
-}
-
-function pushToArray() {
-    inputArray.push({Name: inputName, Age: inputAge, City: inputCity});
-    renderToDisplay();
-}
-
-
-
 //Functions triggered on window load
 window.onload = imageSlideshow();
 window.onload = renderPushArray();
@@ -253,4 +234,3 @@ window.onload = valueRender();
 window.onload = renderPushArrayLoop();
 window.onload = disableButton();
 window.onload = jsonToString();
-window.onload = renderToDisplay();
