@@ -13,10 +13,55 @@
 @import './Snippets/renderJsonToMultiSect';
 @import './Snippets/inputsPushToArraySect';
 
+html {
+    font-size: 20px;
+}
+
 body {
     width: 100%;
     height: 100%;
 }
+
+header {
+    height: 90px;
+    background: pink;
+}
+
+.moduleGrid {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+
+.basicModuleFrame {
+    width: 25%;
+    min-height: 400px;
+    max-height: 900px;
+}
+
+.halfWidthModuleFrame {
+    width: 50%;
+}
+
+.fullWidthModuleFrame {
+    width: 100%;
+}
+
+.moduleCont {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+}
+
+.moduleHeaderCont{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
 
 
 
