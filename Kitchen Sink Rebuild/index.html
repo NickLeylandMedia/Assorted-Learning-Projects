@@ -28,17 +28,17 @@
   <header>
     <div class="headerText"></div>
     <nav>
-      
+
     </nav>
   </header>
-  
-  <section class="modulesDisplay">
-  <!--Module Category-->  
-  <div class="moduleCategoryCont"> 
-    <h1 class="moduleCategory">Functions</h1>
-  </div> 
 
-  <!-- Module -->  
+  <section class="modulesDisplay">
+    <!--Module Category-->
+    <div class="moduleCategoryCont">
+      <h1 class="moduleCategory">Functions</h1>
+    </div>
+
+    <!-- Module -->
     <div class="moduleCont">
       <div class="moduleInfo">
         <h2 class="moduleHeader">Basic Function w/Params</h2>
@@ -49,176 +49,303 @@
         <p class="activatedOutput" id="bpfOutput"></p>
       </div>
     </div>
-  <!---->  
+    <!---->
 
-  <!--Module Category-->  
-  <div class="moduleCategoryCont"> 
-    <h1 class="moduleCategory">Objects</h1>
-  </div>
+    <!--Module Category-->
+    <div class="moduleCategoryCont">
+      <h1 class="moduleCategory">Objects</h1>
+    </div>
 
-  <!-- Module -->  
-  <div class="moduleCont">
-    <div class="moduleInfo">
-      <h2 class="moduleHeader">Basic Object Mapping</h2>
-      <p class="moduleInfoText">Map object properties to elements.</p>
-      <button class="moduleButton" onclick="basicObjectMap()">ACTIVATE</button>
+    <!-- Module -->
+    <div class="moduleCont">
+      <div class="moduleInfo">
+        <h2 class="moduleHeader">Basic Object Mapping</h2>
+        <p class="moduleInfoText">Map object properties to elements.</p>
+        <button class="moduleButton" onclick="basicObjectMap()">ACTIVATE</button>
+      </div>
+      <div class="moduleContent">
+        <p class="activatedOutput" id="boFirstName"></p>
+        <p class="activatedOutput" id="boLastName"></p>
+        <p class="activatedOutput" id="boAge"></p>
+        <p class="activatedOutput" id="boEyeColor"></p>
+      </div>
     </div>
-    <div class="moduleContent">
-      <p class="activatedOutput" id="boFirstName"></p>
-      <p class="activatedOutput" id="boLastName"></p>
-      <p class="activatedOutput" id="boAge"></p>
-      <p class="activatedOutput" id="boEyeColor"></p>
-    </div>
-  </div>
-  <!---->  
+    <!---->
 
-  <!-- Module -->  
-  <div class="moduleCont">
-    <div class="moduleInfo">
-      <h2 class="moduleHeader">Basic Object Methods</h2>
-      <p class="moduleInfoText">Map object properties to elements. Include methods.</p>
-      <button class="moduleButton" onclick="basicObjectMethod()">ACTIVATE</button>
+    <!-- Module -->
+    <div class="moduleCont">
+      <div class="moduleInfo">
+        <h2 class="moduleHeader">Basic Object Methods</h2>
+        <p class="moduleInfoText">Map object properties to elements. Include methods.</p>
+        <button class="moduleButton" onclick="basicObjectMethod()">ACTIVATE</button>
+      </div>
+      <div class="moduleContent">
+        <p class="activatedOutput" id="methFullName"></p>
+        <p class="activatedOutput" id="methFullAge"></p>
+        <p class="activatedOutput" id="methEyeColor"></p>
+      </div>
     </div>
-    <div class="moduleContent">
-      <p class="activatedOutput" id="methFullName"></p>
-      <p class="activatedOutput" id="methFullAge"></p>
-      <p class="activatedOutput" id="methEyeColor"></p>
-    </div>
-  </div>
-  <!----> 
+    <!---->
 
+    <!--Module Category-->
+    <div class="moduleCategoryCont">
+      <h1 class="moduleCategory">Events</h1>
+    </div>
 
-  <!--Module Category-->  
-  <div class="moduleCategoryCont"> 
-    <h1 class="moduleCategory">Arrays</h1>
-  </div>
+    <!-- Module -->
+    <div class="moduleCont">
+      <div class="moduleInfo">
+        <h2 class="moduleHeader">"On Click" Event</h2>
+        <p class="moduleInfoText">Activate function on click.</p>
+      </div>
+      <div class="moduleContent">
+        <p class="" id="clickableText">Click me if you dare, do you?</p>
+      </div>
+    </div>
+    <!---->
 
-  <!--Module Category-->  
-  <div class="moduleCategoryCont"> 
-    <h1 class="moduleCategory">Events</h1>
-  </div>
+    <!-- Module -->
+    <div class="moduleCont">
+      <div class="moduleInfo">
+        <h2 class="moduleHeader">"On Blur" Event</h2>
+        <p class="moduleInfoText">Activate function on when you leave an input field.</p>
+      </div>
+      <div class="moduleContent">
+        <input id="activateOnBlur" type="text" onblur="onBlurFunc()">
+        <p class="" id="onBlurText">YEAH FILL IT UP BIG BOI</p>
+      </div>
+    </div>
+    <!---->
 
-  <!-- Module -->  
-  <div class="moduleCont">
-    <div class="moduleInfo">
-      <h2 class="moduleHeader">"On Click" Event</h2>
-      <p class="moduleInfoText">Activate function on click.</p>
-    </div>
-    <div class="moduleContent">
-      <p class="" id="clickableText">Click me if you dare, do you?</p>
-    </div>
-  </div>
-  <!----> 
+    <!-- Module -->
+    <div class="moduleCont">
+      <div class="moduleInfo">
+        <h2 class="moduleHeader">"On Change" Event</h2>
+        <p class="moduleInfoText">Activate function on when you select an input.</p>
+      </div>
+      <div class="moduleContent">
 
-  <!-- Module -->  
-  <div class="moduleCont">
-    <div class="moduleInfo">
-      <h2 class="moduleHeader">"On Blur" Event</h2>
-      <p class="moduleInfoText">Activate function on when you leave an input field.</p>
+        <select name="" id="onChangeSelect" onchange="onChangeFunc()">
+          <option value="Xbox">Xbox</option>
+          <option value="PlayStation">PlayStation</option>
+          <option value="PC">PC</option>
+        </select>
+        <p class="" id="onChangeText"></p>
+      </div>
     </div>
-    <div class="moduleContent">
-      <input id="activateOnBlur" type="text" onblur="onBlurFunc()">
-      <p class="" id="onBlurText">YEAH FILL IT UP BIG BOI</p>
-    </div>
-  </div>
-  <!----> 
+    <!---->
 
-  <!-- Module -->  
-  <div class="moduleCont">
-    <div class="moduleInfo">
-      <h2 class="moduleHeader">"On Change" Event</h2>
-      <p class="moduleInfoText">Activate function on when you select an input.</p>
+    <!-- Module -->
+    <div class="moduleCont">
+      <div class="moduleInfo">
+        <h2 class="moduleHeader">"On Focus" Event</h2>
+        <p class="moduleInfoText">Activate function on when you click into an input field.</p>
+      </div>
+      <div class="moduleContent">
+        <input id="activateOnFocus" type="text" onfocus="onFocusFunc()" onblur="clearBorder()">
+        <p id="focusedText"></p>
+      </div>
     </div>
-    <div class="moduleContent">
-      
-      <select name="" id="onChangeSelect" onchange="onChangeFunc()">
-        <option value="Xbox">Xbox</option>
-        <option value="PlayStation">PlayStation</option>
-        <option value="PC">PC</option>
-      </select>
-      <p class="" id="onChangeText"></p>
-    </div>
-  </div>
-  <!----> 
+    <!---->
 
-  <!-- Module -->  
-  <div class="moduleCont">
-    <div class="moduleInfo">
-      <h2 class="moduleHeader">"On Focus" Event</h2>
-      <p class="moduleInfoText">Activate function on when you click into an input field.</p>
+    <!--Module Category-->
+    <div class="moduleCategoryCont">
+      <h1 class="moduleCategory">Strings</h1>
     </div>
-    <div class="moduleContent">
-      <input id="activateOnFocus" type="text" onfocus="onFocusFunc()" onblur="clearBorder()">
-      <p id="focusedText"></p>
-    </div>
-  </div>
-  <!----> 
 
-  <!--Module Category-->  
-  <div class="moduleCategoryCont"> 
-    <h1 class="moduleCategory">Strings</h1>
-  </div>
+    <!-- Module -->
+    <div class="moduleCont">
+      <div class="moduleInfo">
+        <h2 class="moduleHeader">Get Length Of String</h2>
+        <p class="moduleInfoText">Display Length of string on button press.</p>
+        <button class="moduleButton" onclick="basicStringLength()">ACTIVATE</button>
+      </div>
+      <div class="moduleContent">
+        <h2 id="stringDisplayText"></h2>
+        <p id="stringLengthText"></p>
+      </div>
+    </div>
+    <!---->
 
-  <!-- Module -->  
-  <div class="moduleCont">
-    <div class="moduleInfo">
-      <h2 class="moduleHeader">Get Length Of String</h2>
-      <p class="moduleInfoText">Display Length of string on button press.</p>
-      <button class="moduleButton" onclick="basicStringLength()">ACTIVATE</button>
+    <!-- Module -->
+    <div class="moduleCont">
+      <div class="moduleInfo">
+        <h2 class="moduleHeader">Get Length Of Input String</h2>
+        <p class="moduleInfoText">Display Length of string on input, string taken from input.</p>
+      </div>
+      <div class="moduleContent">
+        <h2 id=""></h2>
+        <input type="text" id="stringCountInput" oninput="grabStringFromInput()">
+        <h2>Length</h2>
+        <p id="inputStringLength"></p>
+      </div>
     </div>
-    <div class="moduleContent">
-      <h2 id="stringDisplayText"></h2>
-      <p id="stringLengthText"></p>
-    </div>
-  </div>
-  <!----> 
+    <!---->
 
-  
-
-  <!-- Module -->  
-  <div class="moduleCont">
-    <div class="moduleInfo">
-      <h2 class="moduleHeader">Get Length Of Input String</h2>
-      <p class="moduleInfoText">Display Length of string on input, string taken from input.</p>
+    <!-- Module -->
+    <div class="moduleCont">
+      <div class="moduleInfo">
+        <h2 class="moduleHeader">Locate Index of Phrase in String</h2>
+        <p class="moduleInfoText">Display Location of string on button press.</p>
+        <button class="moduleButton" onclick="indexCake()">Cake</button>
+        <button class="moduleButton" onclick="indexIce()">Ice</button>
+        <button class="moduleButton" onclick="indexOceanside()">Oceanside</button>
+      </div>
+      <div class="moduleContent">
+        <h2 id="renderText"></h2>
+        <p id="positionOf"></p>
+        <p id="displayPosition"></p>
+      </div>
     </div>
-    <div class="moduleContent">
-      <h2 id=""></h2>
-      <input type="text" id="stringCountInput" oninput="grabStringFromInput()">
-      <h2>Length</h2>
-      <p id="inputStringLength"></p>
-    </div>
-  </div>
-  <!---->
-
-  <!-- Module -->  
-  <div class="moduleCont">
-    <div class="moduleInfo">
-      <h2 class="moduleHeader">Locate Index of Phrase in String</h2>
-      <p class="moduleInfoText">Display Location of string on button press.</p>
-      <button class="moduleButton" onclick="indexCake()">Cake</button>
-      <button class="moduleButton" onclick="indexIce()">Ice</button>
-      <button class="moduleButton" onclick="indexOceanside()">Oceanside</button>
-    </div>
-    <div class="moduleContent">
-      <h2 id="renderText"></h2>
-      <p id="positionOf"></p>
-      <p id="displayPosition"></p>
-    </div>
-  </div>
-  <!----> 
+    <!---->
 
   </section>
- 
+
+  <section class="moduleSideBySide">
+
+    <!--Module Category-->
+    <div class="moduleCategoryCont">
+      <h1 class="moduleCategory">Arrays</h1>
+    </div>
+
+    <!-- Module -->
+    <div class="thinModuleCont">
+      <div class="thinModuleInfo">
+        <h2 class="moduleHeader">Array .length</h2>
+        <p class="moduleInfoText">Display length of an array on button press.</p>
+        <button class="moduleButton" onclick="showBasicLength()">ACTIVATE</button>
+      </div>
+      <div class="thinModuleContent">
+        <p class="" id="basicArrayDisplay"></p>
+        <p class="" id="basicLengthDisplay"></p>
+      </div>
+    </div>
+    <!---->
+
+    <!-- Module -->
+    <div class="thinModuleCont">
+      <div class="thinModuleInfo">
+        <h2 class="moduleHeader">Array .isArray</h2>
+        <p class="moduleInfoText">Display whether something is an array or not.</p>
+        <button class="moduleButton" onclick="testIfArray()">TEST</button>
+      </div>
+      <div class="thinModuleContent">
+        <p class="" id="basicArrayTestDisplayOne"></p>
+        <p class="" id="basicArrayResultOne"></p>
+        <p class="" id="basicArrayTestDisplayTwo"></p>
+        <p class="" id="basicArrayResultTwo"></p>
+      </div>
+    </div>
+    <!---->
+
+    <!-- Module -->
+    <div class="thinModuleCont">
+      <div class="thinModuleInfo">
+        <h2 class="moduleHeader">Concat Array</h2>
+        <p class="moduleInfoText">Combine two arrays on button press.</p>
+        <button class="moduleButton" onclick="concatem()">COMBINE</button>
+      </div>
+      <div class="thinModuleContent">
+        <p class="" id="preConcateOne"></p>
+        <p class="" id="preConcateTwo"></p>
+        <p class="" id="concatActivat"></p>
+        <p class="" id="postConcate"></p>
+      </div>
+    </div>
+    <!---->
+
+    <!-- Module -->
+    <div class="thinModuleCont">
+      <div class="thinModuleInfo">
+        <h2 class="moduleHeader">Array To String</h2>
+        <p class="moduleInfoText">Convert array to a string on button press.</p>
+        <button class="moduleButton" onclick="arrayToString()">CONVERT</button>
+      </div>
+      <div class="thinModuleContent">
+        <p class="" id="preStringArray"></p>
+        <p class="" id="postStringArray"></p>
+      </div>
+    </div>
+    <!---->
+
+    <!-- Module -->
+    <div class="thinModuleCont">
+      <div class="thinModuleInfo">
+        <h2 class="moduleHeader">Array Join</h2>
+        <p class="moduleInfoText">Execute join method on array on button press.</p>
+        <button class="moduleButton" onclick="joinArraysBasic()">JOIN</button>
+        <button class="moduleButton" onclick="renderBeforeJoin()">RESET</button>
+      </div>
+      <div class="thinModuleContent">
+        <p class="" id="joinArrayOne"></p>
+        <p class="" id="joinArrayTwo"></p>
+        <p class="" id="joinArrayThree"></p>
+      </div>
+    </div>
+    <!---->
+
+    <!-- Module -->
+    <div class="thinModuleCont">
+      <div class="thinModuleInfo">
+        <h2 class="moduleHeader">Push value to array.</h2>
+        <p class="moduleInfoText">Push a value to an array on button press.</p>
+        <button class="moduleButton" onclick="pushToArray()">PUSH</button>
+      </div>
+      <div class="thinModuleContent">
+        <p class="" id="moddableArrayDisplay"></p>
+        <p class="" id=""></p>
+      </div>
+    </div>
+    <!---->
+
+    <!-- Module -->
+    <div class="thinModuleCont">
+      <div class="thinModuleInfo">
+        <h2 class="moduleHeader">Push value to array from input.</h2>
+        <p class="moduleInfoText">Push a value to an array from input on button press.</p>
+        <button class="moduleButton" onclick="pushCustomToArray()">PUSH</button>
+      </div>
+      <div class="thinModuleContent">
+        <p class="" id="customPushDisplay"></p>
+        <p class="" id=""></p>
+        <input type="text" id="pushableInput" oninput="setPushable()">
+      </div>
+    </div>
+    <!---->
+
+    <!-- Module -->
+    <div class="thinModuleCont">
+      <div class="thinModuleInfo">
+        <h2 class="moduleHeader">Array Shift</h2>
+        <p class="moduleInfoText">Shift value from array on button press.</p>
+      </div>
+      <div class="thinModuleContent">
+        <p class="" id="shiftDisplay"></p>
+        <button class="moduleButton" onclick="shiftArrayBasic()">SHIFT</button>
+        <button class="moduleButton" onclick="resetBasicShiftable()">RESET</button>
+      </div>
+    </div>
+    <!---->
+
+  </section>
+
 
   <!-- Add your site or application content here -->
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-  
+
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+    window.ga = function () {
+      ga.q.push(arguments)
+    };
+    ga.q = [];
+    ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('set', 'anonymizeIp', true);
+    ga('set', 'transport', 'beacon');
+    ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
 

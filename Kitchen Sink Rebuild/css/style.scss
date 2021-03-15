@@ -31,11 +31,19 @@ header {
     flex-direction: column;
     width: 90%;
     margin: 25px auto;
+}
 
+.moduleSideBySide {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 25px auto;
 }
 
 .moduleCategoryCont {
     text-align: center;
+    width: 100%;
 }
 
 .moduleCont {
@@ -44,10 +52,26 @@ header {
     padding: 1rem;
 }
 
+.thinModuleCont {
+    width: 33%;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
 .moduleInfo {
     padding: 1rem;
     width: 40%;
     text-align: center;
+    margin: 0 auto;
+}
+
+.thinModuleInfo {
+    padding: 1rem;
+    width: 80%;
+    min-height: 260px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .moduleContent {
@@ -59,8 +83,25 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 0 auto;
 }
 
+.thinModuleContent {
+    border: 1px solid black;
+    width: 90%;
+    min-height: 300px;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.moduleButton {
+    margin: .5rem;
+}
 
 .activatedOutput {
     color: chartreuse;
