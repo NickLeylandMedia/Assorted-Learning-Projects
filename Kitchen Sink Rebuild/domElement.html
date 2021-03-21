@@ -1,0 +1,1362 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--CSS-->
+
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+    <header>
+        <div class="headerText"></div>
+        <nav>
+
+        </nav>
+    </header>
+
+    <section class="moduleSideBySide">
+
+        <!--Module Category-->
+        <div class="moduleCategoryCont">
+            <h1 class="moduleCategory">DOM Element Object</h1>
+        </div>
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">accessKey</h2>
+                <p class="moduleInfoText">ALT + B to activate button.</p>
+            </div>
+            <div class="thinModuleContent">
+                <button class="" id="accessKeyButton" onclick="activateAccessKey()">BUTTON</button>
+                <p id="accessKeyText"></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">addEventListener()</h2>
+                <p class="moduleInfoText"></p>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id="eventListenerText">CLICK ME</p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">appendChild()</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="populateLi()">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <ul id="appendChild">
+                </ul>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">attributes</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="howManyAttributes()">Check Attributes</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id="attributesText" data-temperature="hot" data-size="large" data-color="red">I am text with
+                    attributes. I should have 5.</p>
+                <p id="attributesDisplayText"></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">blur()</h2>
+                <p class="moduleInfoText"></p>
+                <p class="moduleNotes">Note: focusing/blurring text and headers does not seem to work. Works on anchor
+                    elements.</p>
+            </div>
+            <div class="thinModuleContent">
+                <a id="blurText" href="">I am the focusee.</a>
+                <button class="moduleButton" id="focusButton" onclick="blurFocus()">FOCUS</button>
+                <button class="moduleButton" id="blurButton" onclick="blurBlur()">BLUR</button>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">childElementCount</h2>
+                <p class="moduleInfoText">Counts amount of children. Should be 4.</p>
+                <button class="moduleButton" onclick="countChildElements()">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent" id="childElementContMain">
+                <p class="" id="">One</p>
+                <p class="" id="">Two</p>
+                <p class="" id="">Three</p>
+                <p id="elementCountText"></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">childNodes</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="pageChildNodes()">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id="childNodeDisplayText"></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">children</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="pageChildren()">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id="childrenDisplayText"></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">classList</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" id="addClass" onclick="classListAdd()">Add Class Name</button>
+                <button class="moduleButton" id="containsClass" onclick="classListContains()">Contains Class
+                    Name</button>
+                <button class="moduleButton" id="itemClass" onclick="classListItem()">Index Class Name (Item)</button>
+                <button class="moduleButton" id="removeClass" onclick="classListRemove()">Remove Class Name</button>
+                <button class="moduleButton" id="toggleClass" onclick="classListToggle()">Toggle Class Name</button>
+            </div>
+            <div class="thinModuleContent">
+                <h2 class="" id="classListHeader">Classy Header</h2>
+                <p id="classListText"></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">className</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="addClassName()">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <h2 class="" id="classNameText">ClassName Text</h2>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">click()</h2>
+                <p class="moduleInfoText">Activate function with a simulated click.</p>
+                <button class="moduleButton" onclick="simulateClick()">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <button id="simulateButton" onclick="clickAction()">ACTIVATE ME</button>
+                <p class="" id="simulateClickText"></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont" id="clientHeight">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">clientHeight()</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="getHeight()">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id="clientHeightText">How tall am</p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">clientLeft</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="getLeft()">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id="leftBorderText">I am text with a left border.</p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">clientTop</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="getTop()">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id="topBorderText">I am text with a top border.</p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont" id="clientWidth">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">clientWidth</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="getWidth()">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id="clientWidthText">How wide am I?</p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">cloneNode()</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="cloneListItem()">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <div class="thinModuleContent">
+                    <div id="moduleContentCont">
+                        <div class="moduleTwoSec">
+                            <h3>UL to Append</h3>
+                            <ul id="cloneFromOne">
+                                <li>Squids</li>
+                                <li>Sharks</li>
+                                <li>Sea Lions</li>
+                            </ul>
+                            <h3 class="splitHeader"></h3>
+                            <ul id="cloneToOne">
+                                <li>Shellfish</li>
+                            </ul>
+                        </div>
+                        <div class="moduleTwoSec">
+                            <h3>UL TO APPEND</h3>
+                            <ul id="cloneFromTwo">
+                                <li>Squids</li>
+                                <li>Sharks</li>
+                                <li>Sea Lions</li>
+                            </ul>
+                            <h3 class="splitHeader"></h3>
+                            <ul id="cloneToTwo">
+                                <li>Puppies</li>
+                                <li>Kittens</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">closest()</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="applyToClosest()">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <div id="searchForMe">
+                    <p class="" id="findMyPar">I am to be contained.</p>
+                </div>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">compareDocumentPosition()</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">contains()</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="checkIfContains()">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent" id="moduleContains">
+                <p class="" id="checkForP">Check if "thinModuleCont" contains a "p" tag.</p>
+                <p class="" id="displayPContains"></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">contentEditable</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="makeEditable()">ACTIVATE</button>
+                <button class="moduleButton" onclick="disableEditable()">RESET</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id="editableText">I am p text.</p>
+                <p class="" id="editableTextStatus"></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">dir</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">exitFullscreen()</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">firstChild</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">firstElementChild</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">focus()</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">getAttribute()</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">getAttributeNode()</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">getBoundingClientRect()</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">getElementsByClassName</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">getElementsByTagName</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">hasAttribute</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">hasAttributes()</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">hasChildNodes()</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">id</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">innerHTML</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">innerText</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">insertAdjacentElement()</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">insertAdjacentHTML()</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">insertAdjacentText()</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">insertBefore()</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">isContentEditable</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">isDefaultNamespace()</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">isEqualNode()</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">isSameNode()</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">isSupported()</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">lang</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">lastChild</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">lastElementChild</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">matches()</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">namespaceURI</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">nextSibling</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">nextElementSibling</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">nodeName</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">nodeType</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">nodeValue</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">normalize()</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">offsetHeight</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">offsetWidth</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">offsetLeft</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">offsetParent</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">offsetTop</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">outerHTML</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">outerText</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">ownerDocument</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">parentNode</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">parentElement</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">previousSibling</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">previousElementSibling</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">querySelector()</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">querySelectorAll()</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">remove()</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">removeAttribute()</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">removeAttributeNode</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">removeChild()</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">removeEventListener()</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">replaceChild()</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">requestFullscreen()</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">scrollHeight</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">scrollIntoView()</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">scrollLeft</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">scrollTop</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">scrollWidth</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">setAttribute()</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">setAttributeNode()</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">style</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">tabIndex</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">tagName</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">textContent</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">title</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">toString()</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+
+    </section>
+
+    <!-- Add your site or application content here -->
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/domElement.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga = function () {
+            ga.q.push(arguments)
+        };
+        ga.q = [];
+        ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto');
+        ga('set', 'anonymizeIp', true);
+        ga('set', 'transport', 'beacon');
+        ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+
+    <template id="">
+
+
+    </template>
+
+
+</body>
+
+</html>

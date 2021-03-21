@@ -9,6 +9,9 @@ var moddableArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 var customPushArray = [10, 20, 30, 40, 50, 60, 70, 80 ,90];
 var customInputString;
 var shiftableArray = ["Lemon", "Pepper", "Zest", "Musk", "Grime"];
+//Basic Event Delegation
+const hotList = document.getElementById('hotList');
+
 
 function basicParamFunc(x, y) {
     let output = x + y;
@@ -200,18 +203,14 @@ function pushCustomToArray() {
 }
 
 //Shift value from Array
-function renderShiftable() {
-    document.getElementById('shiftDisplay').innerHTML = shiftableArray;
-}
-
 function shiftArrayBasic() {
     shiftableArray.shift();
-    renderShiftable();
+    universalRender("shiftDisplay", shiftableArray);
 }
 
 function resetBasicShiftable() {
     shiftableArray = ["Lemon", "Pepper", "Zest", "Musk", "Grime"];
-    renderShiftable();
+    universalRender("shiftDisplay", shiftableArray);
 }
 
 //Join Values of Array
@@ -230,6 +229,40 @@ function joinArraysBasic() {
     z.innerHTML = shiftableArray.join(" ");
 }
 
+//Unshift values from array
+function unshiftArrayBasic() {
+    shiftableArray.unshift("Pineapples", "Mangoes");
+    universalRender("unshiftDisplay", shiftableArray);
+}
+
+function resetUnshift() {
+    shiftableArray = ["Lemon", "Pepper", "Zest", "Musk", "Grime"];
+    universalRender("unshiftDisplay", shiftableArray);
+}
+
+//Universal Render
+function universalRender(id, innerText) {
+    document.getElementById(id).innerHTML = innerText;
+}
+
+//Basic Event Delegation
+hotList.addEventListener('click', function (e) {
+    const target = e.target;
+
+    if (target.matches("li")) {
+        target.style.backgroundColor = "red";
+    }
+
+});
+
+
+
+
+//List of functions to execute on load
+function renderList() {
+
+}
+
 //On load
 stringDisplay();
 renderMasterTxt();
@@ -239,8 +272,9 @@ renderBeforeConcate();
 renderbeforeString();
 renderModdable();
 renderPushable();
-renderShiftable();
+universalRender("shiftDisplay", shiftableArray);
 renderBeforeJoin();
+universalRender("unshiftDisplay", shiftableArray);
 
 
 

@@ -1,0 +1,37 @@
+a:focus, a:active {
+    color: chocolate;
+}
+
+#classListHeader.outlined {
+    border: 1px solid chocolate;
+}
+
+.blownUp {
+    background-color: cyan;
+}
+
+.redHead {
+    color: red;
+}
+
+#leftBorderText {
+    border-left: 20px solid chartreuse;
+}
+
+#topBorderText {
+    border-top: 25px solid pink;
+}
+
+#moduleContentCont {
+    display: flex;
+    flex-direction: row;
+}
+
+.moduleTwoSec {
+    width: 50%;
+    padding: 1rem;
+
+    ul {
+        padding-right: 2rem;
+    }
+}

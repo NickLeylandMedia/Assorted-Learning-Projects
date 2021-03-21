@@ -1,3 +1,54 @@
+a:focus, a:active {
+  color: chocolate;
+}
+
+#classListHeader.outlined {
+  border: 1px solid chocolate;
+}
+
+.blownUp {
+  background-color: cyan;
+}
+
+.redHead {
+  color: red;
+}
+
+#leftBorderText {
+  border-left: 20px solid chartreuse;
+}
+
+#topBorderText {
+  border-top: 25px solid pink;
+}
+
+#moduleContentCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.moduleTwoSec {
+  width: 50%;
+  padding: 1rem;
+}
+
+.moduleTwoSec ul {
+  padding-right: 2rem;
+}
+
+.activatedOutput {
+  color: chartreuse;
+}
+
+#onBlurText {
+  display: none;
+}
+
 html {
   font-size: 20px;
 }
@@ -134,13 +185,5 @@ header {
 
 .moduleButton {
   margin: .5rem;
-}
-
-.activatedOutput {
-  color: chartreuse;
-}
-
-#onBlurText {
-  display: none;
 }
 /*# sourceMappingURL=style.css.map */
