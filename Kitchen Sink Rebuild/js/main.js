@@ -9,8 +9,17 @@ var moddableArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 var customPushArray = [10, 20, 30, 40, 50, 60, 70, 80 ,90];
 var customInputString;
 var shiftableArray = ["Lemon", "Pepper", "Zest", "Musk", "Grime"];
+
+
+//Arrow Functions
+const alert = () => window.alert('Hello, world!');
+const alertText = () => renderAndStyle("basicArrowFunctionText", "ACTIVATED", "color", "red");
+
 //Basic Event Delegation
 const hotList = document.getElementById('hotList');
+
+//Data Attributes
+const attributeText = document.getElementById('basicAttributesAccess');
 
 
 function basicParamFunc(x, y) {
@@ -240,11 +249,6 @@ function resetUnshift() {
     universalRender("unshiftDisplay", shiftableArray);
 }
 
-//Universal Render
-function universalRender(id, innerText) {
-    document.getElementById(id).innerHTML = innerText;
-}
-
 //Basic Event Delegation
 hotList.addEventListener('click', function (e) {
     const target = e.target;
@@ -255,6 +259,38 @@ hotList.addEventListener('click', function (e) {
 
 });
 
+
+
+
+function logAttributes() {
+    console.log(attributeText.dataset.electric);
+    console.log(attributeText.dataset.weight);
+    console.log(attributeText.dataset.color);
+    universalRender("basicAttributeText", "RESULTS LOGGED");
+    universalStyling("basicAttributeText", "color", "green");
+}
+
+function setAttributes() {
+    attributeText.dataset.electric = "false";
+    renderAndStyle("basicAttributeText", "ATTRIBUTES SET", "color", "red");
+}
+
+
+//UniversalSetStyle
+function universalStyling(target, method, param) {
+    document.getElementById(target).style[method] = param;
+}
+
+//Universal Render
+function universalRender(id, innerText) {
+    document.getElementById(id).innerHTML = innerText;
+}
+
+//Render and Style
+function renderAndStyle(target, content, method, param) {
+    document.getElementById(target).innerHTML = content;
+    document.getElementById(target).style[method] = param;
+}
 
 
 

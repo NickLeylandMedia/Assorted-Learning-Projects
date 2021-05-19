@@ -1,0 +1,259 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Javascript Basics</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--CSS-->
+
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+    <header>
+        <div class="headerText"></div>
+        <nav>
+
+        </nav>
+    </header>
+
+    <section class="moduleSideBySide">
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">Display Result From Prompt</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="retrieveAndRender()">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id="textFromPrompt"></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">Convert to String</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="displayBeforeConvert()">ACTIVATE</button>
+                <button class="moduleButton" onclick="convertToString()">CONVERT</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id="booleanText"></p>
+                <p class="" id="typeOne"></p>
+                <p class="" id="numberText"></p>
+                <p class="" id="typeTwo"></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">Convert to Number</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="basicConversionMath()">Basic Conversion</button>
+                <button class="moduleButton" onclick="displayNumbers()">DISPLAY</button>
+                <button class="moduleButton" onclick="convertToNumber()">CONVERT</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id="">"6" / "2" (Should output "3" below)</p>
+                <p class="" id="resultDisplayOne"></p>
+                <p class="" id="numberString"></p>
+                <p class="" id="numberType"></p>
+            </div>
+        </div>
+        <!---->
+
+        <!--Module Category-->
+        <div class="moduleCategoryCont">
+            <h1 class="moduleCategory">Operators/Maths</h1>
+        </div>
+
+        <!--Module Category-->
+        <div class="moduleCategoryCont">
+            <h1 class="moduleCategory">Comparisons</h1>
+        </div>
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">Simple if statement</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="basicIfPrompt()">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">Extended if statement</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="expandedIfPrompt()">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">Else if statement</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="elseIfPrompt()">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">Long Form Conditional</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="complexConditionalOperator()">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id="legalityText"></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">Simplified "?" Conditional</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="simplifiedConditionalOperator()">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id="legalityTextTwo"></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader">Even Simpler Conditionals (Multiple ?)</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="superSimpleConditional()">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id="legalityTextThree"></p>
+                <p class="" id=""></p>
+            </div>
+        </div>
+        <!---->
+
+        <!--Module Category-->
+        <div class="moduleCategoryCont">
+            <h1 class="moduleCategory">Logical Operators</h1>
+        </div>
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader"> || OR Operator</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="basicOrLogical()">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id="">Returns True if summer (6, 7, or 8)</p>
+                <p class="" id="orDisplayText"></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader"> && AND Operator</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="basicAndLogical()">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id="andDisplayText"></p>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Module -->
+        <div class="thinModuleCont">
+            <div class="thinModuleInfo">
+                <h2 class="moduleHeader"> ! NOT Operator</h2>
+                <p class="moduleInfoText"></p>
+                <button class="moduleButton" onclick="basicNotLogical()">ACTIVATE</button>
+            </div>
+            <div class="thinModuleContent">
+                <p class="" id=""></p>
+                <p class="" id="notDisplayText"></p>
+            </div>
+        </div>
+        <!---->
+
+
+
+    </section>
+
+    <!-- Add your site or application content here -->
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/basics.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga = function () {
+            ga.q.push(arguments)
+        };
+        ga.q = [];
+        ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto');
+        ga('set', 'anonymizeIp', true);
+        ga('set', 'transport', 'beacon');
+        ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+
+    <template id="">
+
+
+    </template>
+
+
+</body>
+
+</html>
