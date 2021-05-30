@@ -49,6 +49,14 @@ a:focus, a:active {
   display: none;
 }
 
+.sidebarButton {
+  margin: 10px 5px;
+}
+
+.moduleButton {
+  margin: .5rem;
+}
+
 html {
   font-size: 20px;
 }
@@ -183,7 +191,52 @@ header {
   margin: 0 auto;
 }
 
-.moduleButton {
-  margin: .5rem;
+.mainWithSide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.sideBar {
+  width: 20%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mainContent {
+  width: 80%;
+  text-align: center;
+}
+
+#dblObjDisp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0 auto;
+  width: 40%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.dblObj {
+  padding: 20px 40px;
+  margin: 0px 20px;
+  text-align: center;
+  border: 1px solid black;
 }
 /*# sourceMappingURL=style.css.map */

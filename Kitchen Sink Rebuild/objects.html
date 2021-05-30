@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Javascript Loops</title>
+    <title>Javascript Basics</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -32,35 +32,43 @@
         </nav>
     </header>
 
-    <section class="mainWithSide" id="">
+    <section id="" class="mainWithSide">
 
-        <div id="" class="sideBar">
-            <h3>Actions</h3>
-            <button id="" class="moduleButton" onclick="hardReset()">RESET ALL</button>
-            <p id="" class="">Print To Console with For Loop</p>
-            <div id="ForLoopPtc">
-            <button id="" class="" onclick="printToConsoleBasic()">Simple For Loop (PTC)</button>
-            <button id="" class="" onclick="printToConsoleSimplified()">Simpler For Loop (PTC)</button>
-            <button id="" class="" onclick="printOddToConsole()">Print Odd to Console</button>
-            </div>
-            <div id="inputToArray" class="">
-                <h4>Input to Array</h4>
-                <input type="text" id="arrayInput" oninput="">
-                <button id="" class="" onclick="inputToArray()">PUSH</button>
-            </div>
-            <button id="" class="sidebarButton" onclick="iterateToList()">Iterate Array to List</button>
-            <button id="" class="sidebarButton" onclick="addToPrompt()">Prompt and Add</button>
-            <button id="" class="sidebarButton" onclick="nestedLoopLogging()">Log Nested Loop</button> 
-            <button id="" class="sidebarButton" onclick="nestedLoopMult()">Multiply Nested Loop</button>
-        </div>
 
-        <div id="" class="mainContent">
-            <h3>Display</h3>
-            <p id="arrayDisplay" class=""></p>
-            <p id="actionText" class=""></p>
-        </div>
+        <section id="" class="sideBar">
+            <button class="" id="" onclick="marriageRender()">Display Couple</button>
+            <button class="" id="" onclick="marry()">Marry</button>
+            <button class="" id="" onclick="indivRender()">Individual</button>
+            <div class="" id="">
+            </div>
+        </section>
+
+
+        <section id="" class="mainContent">
+            <div id="singObjDisp" class="">
+                <p id="indivFName" class=""></p>
+                <p id="indivLName" class=""></p>
+                <p id="indivAge" class=""></p>
+                <p id="indivFullName" class=""></p>
+            </div>
+            <div id="dblObjDisp" class="">
+                <div id="dblObjOne" class="dblObj">
+                    <h3 id="oneName" class=""></h3>
+                    <p id="oneAge" class=""></p>
+                    <p id="oneWife" class=""></p>
+                </div>
+                <div id="dblObjTwo" class="dblObj">
+                    <h3 id="twoName" class=""></h3>
+                    <p id="twoAge" class=""></p>
+                    <p id="twoHusband" class=""></p>
+                </div>
+            </div>
+        </section>
+
 
     </section>
+
+
 
 
 
@@ -68,7 +76,7 @@
     <!-- Add your site or application content here -->
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
-    <script src="js/loops.js"></script>
+    <script src="js/objects.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>

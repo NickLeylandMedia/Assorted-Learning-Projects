@@ -1,6 +1,7 @@
 //Imports
 @import './snippets/domElement';
 @import './snippets/domDocument';
+@import './snippets/buttons';
 
 
 
@@ -101,12 +102,45 @@ header {
     margin: 0 auto;
 }
 
-.moduleButton {
-    margin: .5rem;
+.mainWithSide {
+    display: flex;
+    flex-direction: row;
 }
 
+.sideBar{
+    width: 20%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
 
+.mainContent{
+    width: 80%;
+    text-align: center;
+}
 
+.rowBar {
+
+}
+
+.columnBar {
+
+}
+
+#dblObjDisp {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 40%;
+    justify-content: space-evenly;
+}
+
+.dblObj {
+    padding: 20px 40px;
+    margin: 0px 20px;
+    text-align: center;
+    border: 1px solid black;
+}
 
 
 
