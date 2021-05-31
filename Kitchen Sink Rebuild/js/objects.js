@@ -5,6 +5,17 @@ let twoNameEl = document.getElementById('twoName')
 let twoAgeEl = document.getElementById('twoAge')
 let twoSpouseEl = document.getElementById('twoHusband')
 
+//Primitive Conversion Examples
+let america_pop = population('USA', 350e6)
+let mexico_pop = population('Mexico', 200e6)
+let canada_pop = population("Canada", 200e6)
+
+let america_pop_s = populationTwo('USA', 350e6)
+let mexico_pop_s = populationTwo('Mexico', 200e6)
+let canada_pop_s = populationTwo("Canada", 200e6)
+
+let north_america_pop = america_pop_s + mexico_pop_s + canada_pop_s;
+
 
 
 //New Person Info (Constructor Function)
@@ -43,6 +54,7 @@ let condisp = document.getElementById('condDisp');
 
 //Primitive Conversion Element (For Display)
 let vertDisp = document.getElementById("vertDisp");
+let vertDispTwo = document.getElementById("vertDispTwo");
 
 
 /*   Property Assignment   */
@@ -126,14 +138,36 @@ let dispUndef = () => condisp.innerHTML = recruit.location?.street;
 //Conditional Property ?.[]
 
 /* Object To Primitive Conversion */
-//Object to String
-
-//Object to Number
-function objToNum() {
-
+function population(country, pop) {
+    return {
+        country: country,
+        pop: pop
+        }
 }
 
+function populationTwo(country, pop) {
+    return {
+        country: country,
+        pop: pop,
+        toString: function () {
+            return "[Population " + "\"" + country + "\" " + pop + "]"
+        },
+        valueOf: function () {
+            return pop;
+        }
+    };
+}
 
+//Value Display Functions
+function disPop(fig) {
+    document.getElementById("vertDisp").innerHTML = fig;
+}
+
+function disPopTs(fig) {
+    document.getElementById("vertDispTwo").innerHTML = fig;
+}
+
+let disPopTot = (fig) => document.getElementById("dispTot").innerHTML = fig; 
 
 
 
