@@ -38,18 +38,64 @@
             <h2>NUMBERS</h2>
             <h3>Num .toString</h3>
             <button onclick="convStringIncBase()">Convert (Inc. Base)</button>
-            <input type="text">
+
+            <h2>Math</h2>
+            <input type="text" id="numInp" class="">
             <div>
-                <h3>Math .floor</h3>
-                <h3>Math .ceil</h3>
-                <h3>Math .round</h3>
-                <h3>Math .trunc</h3>
+                <button id="grabBtn" class="" onclick="grabFromIn()">Grab</button>
+                <button id="floorBtn" class="" onclick="numFloor()">.floor</button>
+                <button id="ceilBtn" class="" onclick="numCeil()">.ceil</button>
+                <button id="roundBtn" class="" onclick="numRound()">.round</button>
+                <button id="truncBtn" class="" onclick="numTrunc()">.trunc</button>
+            </div>
+            <h4>Round to Digit</h4>
+            <div>
+                <button id="" class="" onclick="roundFixed(1)">1</button>
+                <button id="" class="" onclick="roundFixed(2)">2</button>
+                <button id="" class="" onclick="roundFixed(3)">3</button>
+                <button id="" class="" onclick="roundFixed(4)">4</button>
+                <button id="" class="" onclick="roundFixed(5)">5</button>
+                <button id="" class="" onclick="roundFixed(6)">6</button>
+                <button id="" class="" onclick="roundFixed(7)">7</button>
+                <button id="" class="" onclick="roundFixed(8)">8</button>
+            </div>
+            <h4>Parse From Input</h4>
+            <input type="text" id="parseInp" class="">
+            <div>
+                <button id="" class="" onclick="grabParseVal()">Grab</button>
+                <button id="" class="" onclick="parseIntString()">ParseInt</button>
+                <button id="" class="" onclick="parseFloatString()">ParseFloat</button>
+            </div>
+            
+            <h3>Math</h3>
+            <button id="" class="" onclick="genRandom()">Generate Random Number</button>
+            <h4>Absolute Value</h4>
+            <div>
+                <button id="" class="" onclick="absVal(-5)">-5</button>
+                <button id="" class="" onclick="absVal(24)">24</button>
+                <button id="" class="" onclick="absVal(-785)">-785</button>
+            </div>
+            <h4>ArcCosine</h4>
+            <div>
+                <button id="" class="" onclick="arcCos(-2)">-2</button>
+                <button id="" class="" onclick="arcCos(-1)">-1</button>
+                <button id="" class="" onclick="arcCos(0.5)">0.5</button>
+            </div>
+            <h4>ArcCosine Hyperbolic</h4>
+            <div>
+                <button id="" class="" onclick="arcCosHyp(-2)">-2</button>
+                <button id="" class="" onclick="arcCosHyp(1)">1</button>
+                <button id="" class="" onclick="arcCosHyp(2.5)">2.5</button>
             </div>
         </div>
 
         <div id="" class="mainContent">
             <ul id="baseList">
             </ul>
+            <div>
+                <h4 id="mathNum" class=""></h4>
+                <p id="modNum" class=""></p>
+            </div>
         </div>
     </section>
 
