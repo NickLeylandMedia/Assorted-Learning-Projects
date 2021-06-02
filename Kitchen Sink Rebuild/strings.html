@@ -41,11 +41,64 @@
             <h3>Get Length of String</h3>
             <input type="text" oninput="" id="strInput">
             <button onclick="grabAndLeng()">.length</button>
+            <h3>Display Character at Position</h3>
+            <div>
+                <button onclick="strPos(0)">0</button>
+                <button onclick="strPos(3)">3</button>
+                <button onclick="strPos(5)">5</button>
+                <button onclick="strPos(9)">9</button>
+            </div>
+            <h3>Change Case</h3>
+            <div>
+                <button onclick="changeUpper()">Upper</button>
+                <button onclick="changeLower()">Lower</button>
+            </div>
+            <h3>Find First Position of...</h3>
+            <button onclick="renderSearch()">Show String</button>
+            <div>
+                <button onclick="search('green')">green</button>
+                <button onclick="search('ham')">ham</button>
+                <button onclick="search('caviar')">caviar</button>
+                <button onclick="search('bride')">bride</button>
+                <button onclick="searchMulti()">the</button>
+            </div>
+            <h3>Check if string includes...</h3>
+            <div>
+                <button onclick="checkInclude('green')">green</button>
+                <button onclick="checkInclude('ham')">ham</button>
+                <button onclick="checkInclude('caviar')">caviar</button>
+                <button onclick="checkInclude('bride')">bride</button>
+                <button onclick="checkInclude('spaghetti')">spaghetti</button>
+            </div>
+            <h3>Check if string starts with...</h3>
+            <div>
+                <button onclick="checkStart('Six')">Six</button>
+                <button onclick="checkStart('ham')">ham</button>
+            </div>
+            <h3>Check if string ends with...</h3>
+            <div>
+                <button onclick="checkEnd('guest.')">guest.</button>
+                <button onclick="checkEnd('ham')">ham</button>
+            </div>
+            <h3>Slice string from position</h3>
+            <div>
+                <button onclick="sliceFrom(2)">2</button>
+                <button onclick="sliceFrom(6)">6</button>
+            </div>
         </div>
 
         <div id="" class="mainContent">
             <p id="addDisp" class=""></p>
+            <p id="stringDisp"></p>
             <p id="lengDisp" class=""></p>
+            <p id="posDisp" class=""></p>
+            <p id="caseDisp" class=""></p>
+            <p id="searchDisp"></p>
+            <p id="resultDisp"></p>
+            <p id="totalDisp"></p>
+            <p id="inclDisp"></p>
+            <p id="inclRes"></p>
+            <p id="sliceDisp"></p>
         </div>
 
     </section>
