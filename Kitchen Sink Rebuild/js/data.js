@@ -5,6 +5,7 @@ let inpNum
 
 let parString
 
+
 //Buttons
 let floorBtn = document.getElementById("floorBtn")
 let ceilBtn = document.getElementById("ceilBtn")
