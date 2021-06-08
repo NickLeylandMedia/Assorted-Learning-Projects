@@ -32,7 +32,42 @@
         </nav>
     </header>
 
-    <section id="" class="">
+    <section id="" class="mainWithSide">
+        <div id="" class="sideBar">
+            <button onclick="dispArrOne()">Display Array One</button>
+            <button onclick="lengArrOne()">Length of Array One</button>
+            <div>
+                <h3>Select Term</h3>
+                <input id="termInpOne" type="number" min="0" max="" oninput="setModTerm(), setTermVal(), dispSel()">
+                <h4>Actions</h4>
+                <input id="textInpOne" type="text" oninput="grabTxt()">
+                <button onclick="termModify()">Modify Selected Term</button>
+                <button onclick="arrPush()">Push to Array</button>
+                <button onclick="arrShift()">Shift from Array</button>
+                <button onclick="arrPop()">Pop from Array</button>
+                <button onclick="arrSpl()">Splice From Array</button>
+                <button onclick="splAdd()">Splice And Add to Array</button>
+            </div>
+            <button onclick="logArr()">Log Array items to Console</button>
+            <button onclick="splArr()">Slice Array</button>
+            <button onclick="concArr()">Concat Array</button>
+            <button onclick="forEachLog()">Foreach Console Log</button>
+            <button onclick="forEachDesc()">Foreach Descriptive Log</button>
+            <div>
+                <input id="searchInp" type="text">
+                <button onclick="grabSearch(), searchArr()">Grab and Search</button>
+                <button onclick="grabSearch(), inclArr()">Check if Includes</button>
+            </div>
+            <button onclick="findUser()">Find User</button>
+        </div>
+
+        <div id="" class="mainContent">
+            <h3 id="arrOneDisp" class=""></h3>
+            <p id="arrOneLeng" class=""></p>
+            <p id="termDispOne" class=""></p>
+            <p id="newArrDisp" class=""></p>
+            <p id="resDisp" class=""></p>
+        </div>
 
     </section>
 
@@ -41,7 +76,7 @@
     <!-- Add your site or application content here -->
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
-    <script src="js/basics.js"></script>
+    <script src="js/arrays.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
