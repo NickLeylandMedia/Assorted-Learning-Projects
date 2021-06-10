@@ -5,6 +5,8 @@ let users = [
     {id: 3, name: "Steve"}
 ]
 
+let names = 'Bilbo, Gandalf, Nazgul'
+
 let user
 
 let termInpOne = document.getElementById("termInpOne")
@@ -169,6 +171,39 @@ let findUser = () => {
     return console.log(user.name)
 }
 
+//Filter users
+let filterUsers = () => {
+    let someUsers = users.filter(item => item.id < 3)
+    return console.log(someUsers)
+}
+
+//Map Lengths
+let mapLengs = () => {
+    let lengths = arrOne.map(item => item.length)
+    document.getElementById('resDisp').innerHTML = lengths 
+}
+
+//Reverse Array
+let revArr = () => {
+    let reversed = arrOne.reverse()
+    document.getElementById('resDisp').innerHTML = reversed
+}
+
+//Split
+let splitArr = () => {
+    let arrSplit = names.split(', ')
+    for (let name of arrSplit) {
+        console.log(`A message to ${name}`)
+    }
+}
+
+//Check if Array
+let checkIfArray = () => {
+    let result = Array.isArray(arrOne)
+    console.log(result)
+}
+
+//REVISIT ARRAY METHODS
 
 //Run On Load
 setMax(termInpOne)
