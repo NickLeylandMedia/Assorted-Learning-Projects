@@ -48,6 +48,56 @@ let convObj = {
     age: 68
 }
 
+//Mapping/Manipulating Object
+let market = {
+    "Banana": 3,
+    "Paper": 1,
+    "Onion": 2,
+    "Potion": 5,
+    "Gold Bar": 50,
+    "Marigold": 15
+}
+
+//Market Map
+let dubbed = Object.fromEntries(Object.entries(market).map(([key, val]) => [key, val * 2]))
+
+/* DeStructuring */
+let huManArr = ["John","Smith"] 
+let huWomanArr = ["Jane","Doe"]
+
+let [manName, manSur] = huManArr
+let [womanName, womanSur] = huWomanArr
+
+let [species, subSpecies] = "Godzillus Taractus".split(' ')
+
+let [a, b, c] = "abc"
+
+let [one, two, three] = new Set([1, 2, 3])
+
+let youngWoman = {};
+[youngWoman.name, youngWoman.surname, youngWoman.profession] = "Taylor Smith Programmer".split(' ') 
+
+let detective = new Map()
+detective.set("name", "FlyntCoal")
+detective.set("age", 30)
+
+let [name1, name2, ...rest] = ["Julius", "Caesar", "Consul", "of the Roman Republic"]
+
+let {firstName, lastName, age, fullName} = indiv
+
+let options = {
+    title: "Menu",
+    width : 100,
+    height: 200
+}
+
+let {width: w, height: h, title} = options
+
+let specs = {
+    display: "Viewport"
+}
+
+let {vWidth = 1920, vHeight = 1080, display} = specs
 
 //Conditional Chaining Element (For Display)
 let condisp = document.getElementById('condDisp');
@@ -170,5 +220,93 @@ function disPopTs(fig) {
 let disPopTot = (fig) => document.getElementById("dispTot").innerHTML = fig; 
 
 
+/* Iterate Over Objects */
+//Display Keys
+let displayKeys = (obj) => {
+    let keys = Object.keys(obj)
+    return document.getElementById("keyDisp").innerHTML = keys
+}
+//Display Values
+let displayVals = (obj) => {
+    let vals = Object.values(obj)
+    return document.getElementById("valDisp").innerHTML = vals
+}
+//Display Entries
+let displayEnts = (obj) => {
+    let ents = Object.entries(obj)
+    return document.getElementById("entDisp").innerHTML = ents
+}
+
+//Object Transformation
+let logThings = () => {
+    console.log(dubbed)
+    console.log(dubbed.Marigold)
+    console.log(dubbed['Gold Bar'])
+}
+
+//Object Destructuring
+let logStruct = () => {
+    console.log(manName)
+    console.log(manSur)
+    console.log(womanName)
+    console.log(womanSur)
+}
+
+let logSpecies = () => {
+    console.log(species)
+    console.log(subSpecies)
+}
+
+let logAlpha = () => {
+    console.log(a)
+    console.log(b)
+    console.log(c)
+}
+
+let logNum = () => {
+    console.log(one)
+    console.log(two)
+    console.log(three)
+}
+
+let logWoman = () => {
+    console.log(youngWoman.name)
+    console.log(youngWoman.surname)
+    console.log(youngWoman.profession)
+}
+
+let loopEntries = () => {
+    for (let [key, value] of Object.entries(market)) {
+        console.log(`${key}: ${value}`)
+    }
+}
+
+let logDetective = () => {
+    for (let [key, value] of detective) {
+        console.log(`${key}: ${value}`)
+    }
+}
+
+let logWoRest = () => {
+    console.log(name1)
+    console.log(name2)
+}
+
+let logRest = () => {
+    console.log(rest[0])
+    console.log(rest[1])
+}
+
+let logOptions = () => {
+    console.log(title)
+    console.log(w)
+    console.log(h)
+}
+
+let logSpecs = () => {
+    console.log(vWidth)
+    console.log(vHeight)
+    console.log(display)
+}
 
 
