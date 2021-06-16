@@ -1,0 +1,19 @@
+//Visual Components/CSS Assets
+@import './components/assets/buttons';
+@import './components/assets/links';
+@import './components/assets/lists';
+
+//Layouts
+@import './components/layouts/noscroll-cover';
+
+//Page Components
+@import './components/pageComponents/formVal.scss';
+@import './components/pageComponents/surveyForm.scss';
+
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
