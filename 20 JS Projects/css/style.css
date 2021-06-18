@@ -402,6 +402,12 @@ p.text span {
           flex-direction: column;
 }
 
+#packageSelector-cont {
+  text-align: center;
+  margin: 25px auto;
+  color: #444451;
+}
+
 #tixSelector-cont {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;

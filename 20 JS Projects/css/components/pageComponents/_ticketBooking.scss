@@ -6,6 +6,12 @@
     flex-direction: column;
 }
 
+#packageSelector-cont {
+    text-align: center;
+    margin: 25px auto;
+    color: #444451;
+}
+
 #tixSelector-cont {
     justify-content: space-between;
     display: flex;
@@ -79,4 +85,6 @@
     background-color: brown;
     border: 1px solid black;
 }
+
+
 
