@@ -1,0 +1,82 @@
+#tixBooking {
+    background-color: rgb(23, 20, 31);
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+}
+
+#tixSelector-cont {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tixSel {
+    height: 250px;
+}
+
+.tixSel.narrow {
+    width: 27%;
+    margin: 25px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tixSel.wide {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.row.hor {
+    justify-content: center;
+}
+
+.row.vert {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.conseat { 
+    background-color: #444451;
+    height: 12px;
+    width: 15px;
+    margin: 2px;
+    border-radius: 10px;
+}
+
+.conseat.midVert {
+    height: 30px;
+}
+
+.conseat.largeVert {
+    height: 50px;
+    width: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.row.hor .conseat:nth-of-type(4) {
+    margin-right: 18px;
+}
+
+.row.hor .conseat:nth-of-type(8) {
+    margin-right: 18px;
+}
+
+.row.hor .conseat:nth-last-of-type(4) {
+    margin-left: 18px;
+}
+
+.stage {
+    top: 10%;
+    position: relative;
+    width: 70%;
+    height: 80%;
+    background-color: brown;
+    border: 1px solid black;
+}
+
