@@ -72,7 +72,7 @@
                     <div class="conseat midVert"></div>
                     <div class="conseat midVert"></div>
                     <div class="conseat midVert"></div>
-                    <div class="conseat midVert"></div>                    
+                    <div class="conseat midVert"></div>
                 </div>
             </div>
             <div class="tixSel narrow">
@@ -84,7 +84,7 @@
                     <div class="conseat midVert"></div>
                     <div class="conseat midVert"></div>
                     <div class="conseat midVert"></div>
-                    <div class="conseat midVert"></div>                    
+                    <div class="conseat midVert"></div>
                 </div>
                 <div class="row vert">
                     <div class="conseat largeVert"></div>
@@ -277,8 +277,43 @@
             </div>
         </div>
         <div id="totalDisp-cont">
-            <p class="text">You have selected <span id="seatsAmt">0</span> seats for a total of $<span id="grandTotal">0</span></p>
+            <p class="text">You have selected <span id="seatsAmt">0</span> seats for a total of $<span
+                    id="grandTotal">0</span></p>
             <p id="errMess"></p>
+        </div>
+        <div id="action-cont">
+            <button id="activCheckout" class="" onclick="">CHECK OUT</button>
+        </div>
+        <div id="transaction-cont">
+            <form id="checkout" action="">
+                <div class="formIn">
+                    <h3>First Name</h3>
+                    <input id="fname" name="first name" type="text">
+                    <small></small>
+                </div>
+                <div class="formIn">
+                    <h3>Last Name</h3>
+                    <input id="lname" name="last name" type="text">
+                    <small></small>
+                </div>
+                <div class="formIn">
+                    <h3>Email</h3>
+                    <input id="email" name="email address" type="text">
+                    <small></small>
+                </div>
+                <div class="formIn">
+                    <h3>Credit Card Number</h3>
+                    <input id="credit" name="credit card number" type="text">
+                    <small></small>
+                </div>
+                <div class="formIn">
+                    <p id="status"></p>
+                </div>
+                <div class="formIn">
+                    <button class="" id="checkSub">Submit Form</button>
+                    <button class="" id="checkStop">Cancel</button>
+                </div>
+            </form>
         </div>
     </section>
 

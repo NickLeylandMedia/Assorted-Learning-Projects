@@ -582,6 +582,51 @@ p.text span {
   margin: 0 auto;
 }
 
+#transaction-cont {
+  width: 30%;
+  height: auto;
+  background-color: white;
+  position: absolute;
+  top: 15%;
+  left: 35%;
+  display: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+}
+
+.formIn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px 0;
+}
+
+.formIn h3 {
+  margin: 8px 0;
+}
+
+#action-cont {
+  width: 33%;
+  margin: 0 auto;
+  text-align: center;
+}
+
 body {
   width: 100%;
   height: 100%;
