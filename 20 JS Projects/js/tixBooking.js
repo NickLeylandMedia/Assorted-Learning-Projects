@@ -2,6 +2,7 @@
 const tixCont = document.querySelector('#tixSelector-cont')
 const seats = document.querySelectorAll('.conseat:not(.occupied)');
 const occseats = document.querySelectorAll('.row .conseat.occupied')
+const onl = document.querySelectorAll('.row .conseat')
 const packageSelect = document.getElementById('package')
 const error = document.getElementById('errMess')
 
@@ -73,11 +74,19 @@ function setPackage(package, price) {
 //Populate UI
 function populateInfo() {
     let selectedSeats = JSON.parse(localStorage.getItem('selectedSeats'))
-    console.log(selectedSeats)
+    let occupiedSeats = JSON.parse(localStorage.getItem('occupiedSeats'))
     if (selectedSeats !== null && selectedSeats.length > 0) {
         seats.forEach((seat, index) => {
             if (selectedSeats.indexOf(index) > -1) {
                 seat.classList.add('selected')
+            }
+        })
+    }
+
+    if (occupiedSeats !== null && occupiedSeats.length > 0) {
+        seats.forEach((seat, index) => {
+            if (occupiedSeats.indexOf(index) > -1) {
+                seat.classList.add('occupied')
             }
         })
     }
@@ -183,6 +192,7 @@ function confirmSeats() {
             if (selectedSeats.indexOf(index) > -1) {
                 seat.classList.remove('selected')
                 seat.classList.add('occupied')
+                setOccupied()
             } else {
                 console.log('other')
             }
@@ -224,12 +234,13 @@ function resetForm(input) {
     
 }
 
+//Set Seats as occupied/store locally
 function setOccupied() {
     let selSeats = document.querySelectorAll('.row .conseat.occupied')
     let seatsIndex = [...selSeats].map((seat) => {
-    return [...occseats].indexOf(seat)
+    return [...onl].indexOf(seat)
     })
-    console.log(seatsIndex)
+    localStorage.setItem('occupiedSeats', JSON.stringify(seatsIndex))
 }
 
 /* Event Listeners */
