@@ -36,14 +36,28 @@
         <div id="packageSelector-cont">
             <h3>Select a Package</h3>
             <select name="" id="package">
-                <option value="0">Standard</option>
+                <option value="10">Standard</option>
                 <option value="30">Standard with Meal Plan</option>
                 <option value="100">VIP</option>
                 <option value="500">VIP + Backstage Pass</option>
             </select>
         </div>
         <div id="seatLegend-cont">
-            
+            <div class="titleWrap">
+                <h3>Legend</h3>
+            </div>
+            <div class="legSeat">
+                <p>Regular</p>
+                <div class="conseat"></div>
+            </div>
+            <div class="legSeat">
+                <p>Selected</p>
+                <div class="conseat selected"></div>
+            </div>
+            <div class="legSeat">
+                <p>Occupied</p>
+                <div class="conseat occupied"></div>
+            </div>
         </div>
         <div id="tixSelector-cont">
             <div class="tixSel narrow">
@@ -230,6 +244,7 @@
                     <div class="conseat"></div>
                     <div class="conseat"></div>
                     <div class="conseat"></div>
+                    <div class="conseat occupied"></div>
                     <div class="conseat"></div>
                     <div class="conseat"></div>
                     <div class="conseat"></div>
@@ -237,15 +252,14 @@
                     <div class="conseat"></div>
                     <div class="conseat"></div>
                     <div class="conseat"></div>
-                    <div class="conseat"></div>
-                    <div class="conseat"></div>
+                    <div class="conseat occupied"></div>
                     <div class="conseat"></div>
                     <div class="conseat"></div>
                 </div>
                 <div class="row hor">
                     <div class="conseat"></div>
                     <div class="conseat"></div>
-                    <div class="conseat"></div>
+                    <div class="conseat occupied"></div>
                     <div class="conseat"></div>
                     <div class="conseat"></div>
                     <div class="conseat"></div>
@@ -261,6 +275,10 @@
                     <div class="conseat"></div>
                 </div>
             </div>
+        </div>
+        <div id="totalDisp-cont">
+            <p class="text">You have selected <span id="seatsAmt">0</span> seats for a total of $<span id="grandTotal">0</span></p>
+            <p id="errMess"></p>
         </div>
     </section>
 

@@ -12,6 +12,42 @@
     color: #444451;
 }
 
+#seatLegend-cont {
+    width: 66%;
+    margin: 0 auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(60,60,60,0.2);
+    color:white;
+}
+
+.legSeat {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 15px;
+    align-items: center;
+}
+
+.titleWrap {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.titleWrap h3 {
+    margin: 0;
+}
+
+.legSeat p {
+    margin: 0;
+}
+
 #tixSelector-cont {
     justify-content: space-between;
     display: flex;
@@ -54,13 +90,28 @@
     border-radius: 10px;
 }
 
+.conseat.selected {
+    background-color: #E6C62f;
+}
+
+.conseat.occupied {
+    background-color: white;
+}
+
+.conseat:not(.occupied):hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
 .conseat.midVert {
     height: 30px;
+    margin: 4px auto;
 }
 
 .conseat.largeVert {
     height: 50px;
     width: 20px;
+    margin: 6px auto;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -84,6 +135,12 @@
     height: 80%;
     background-color: brown;
     border: 1px solid black;
+}
+
+#totalDisp-cont {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
 }
 
 
