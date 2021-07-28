@@ -1,4 +1,6 @@
-let userName;
+let userName
+
+let arr = [3,5,6,7]
 
 let askName = () => {
     userName = prompt('What is your name?','');
@@ -124,3 +126,34 @@ function addBelowLoop(num) {
 }
 
 
+/* Rest and Spread */
+//Rest Parameters
+function sum(...vals) {
+    let sum = 0
+
+    for (let val of vals) {
+        sum += val
+    }
+
+    return sum
+}
+//Spread Syntax
+function spreadMax() {
+    return console.log(Math.max(...arr))
+}
+//Spread a String
+function spreadString(string) {
+    return console.log(...string)
+}
+
+/* Time Intervals */
+let logHi = () => console.log('hi')
+
+
+function intervalFunc() {
+
+}
+//Timeout Function
+function timeoutFunc() {
+    setTimeout(logHi, 3000)
+}

@@ -16,8 +16,6 @@ let canada_pop_s = populationTwo("Canada", 200e6)
 
 let north_america_pop = america_pop_s + mexico_pop_s + canada_pop_s;
 
-
-
 //New Person Info (Constructor Function)
 let newName;
 let newAge;
@@ -120,6 +118,28 @@ let woman = {
     name: "Jane",
     age: 23,
     husband: ""
+}
+
+/* Getters and Setters */
+//Setter
+let traveler = {
+    Name: 'Dostin',
+    Surname: 'Joob',
+    TrailFirst: '',
+    TrailSur: '',
+    set learn(language) {
+        this.langs.push(language)
+    },
+    langs : [],
+    get fullName() {
+        return `${this.Name} ${this.Surname}`
+    },
+    set trailName(value) {
+        [this.TrailFirst, this.TrailSur] = value.split(" ")
+    },
+    get trailName() {
+        return `${this.TrailFirst} ${this.TrailSur}`
+    }
 }
 
 //Property Assignment Functions
@@ -309,4 +329,10 @@ let logSpecs = () => {
     console.log(display)
 }
 
+//Setter Functions
+let learnLang = () => {
+    traveler.learn = 'EN'
+    traveler.learn = 'FR'
+    console.log(traveler.langs)
+}
 
