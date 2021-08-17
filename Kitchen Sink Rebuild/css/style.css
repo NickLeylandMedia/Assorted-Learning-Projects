@@ -57,22 +57,255 @@ a:focus, a:active {
   margin: .5rem;
 }
 
+#snipGrid-sect {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#snipGrid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#snipGridTitle {
+  color: #b8cdcd;
+  font-family: "Montserrat", sans-serif;
+}
+
+.snipGridItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 115px;
+  width: 15%;
+  padding: 2%;
+  background-color: #251b2d;
+  border-radius: 25px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+.snipGridItem:hover {
+  background-color: #e6c62f;
+}
+
+.snipGridItem.active {
+  background-color: red;
+}
+
+.snipItemImg {
+  padding-top: 5%;
+  width: 80px;
+  height: 80px;
+}
+
+.snipItemSect {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.snipItemTitle {
+  color: #a466a3;
+  font-family: "Montserrat", sans-serif;
+  margin: 4px auto;
+}
+
+.snipItemDesc {
+  font-family: "Inconsolata", monospace;
+  color: #1f81df;
+  margin: 4px auto;
+}
+
+#snipRender-sect {
+  position: absolute;
+  left: 100vw;
+  top: 0;
+  height: 100vw;
+  width: 100vw;
+  text-align: center;
+  color: #b8cdcd;
+}
+
+#snipRender-cont {
+  margin: 0 auto;
+  width: 85%;
+  height: 100%;
+}
+
+#backArrow {
+  position: relative;
+  top: 2%;
+  right: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+#backArrow:hover {
+  -webkit-filter: invert(0);
+          filter: invert(0);
+}
+
+#snipRenderTitle {
+  font-family: "Montserrat", sans-serif;
+  margin: 10px auto;
+}
+
+#snipRenderDesc {
+  font-family: "Inconsolata", monospace;
+  margin: 10px auto;
+}
+
+#snipRenderWindow {
+  min-height: 70vh;
+  width: 70%;
+  margin: 20px auto;
+  background-color: #251b2d;
+  border-radius: 25px;
+}
+
+#renderContainer {
+  width: 95%;
+  height: 95%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.rendHalf {
+  width: 45%;
+  padding: 1rem;
+  font-size: 1rem;
+  height: auto;
+  font-family: "Inconsolata", monospace;
+}
+
+.rendWhole {
+  width: 95%;
+  padding: 1rem;
+  height: auto;
+  font-family: "Inconsolata", monospace;
+}
+
+#snipRenderOptionHeader {
+  font-family: "Montserrat", sans-serif;
+}
+
+.snipOptButt {
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 12px 40px;
+  color: #b8cdcd;
+  font-family: "Inconsolata", monospace;
+  cursor: pointer;
+}
+
+.snipOptButt:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.snipOptButt.orange {
+  border: 2px solid #e07d13;
+  color: #e07d13;
+}
+
+.snipOptButt.orange:hover {
+  background-color: rgba(224, 125, 19, 0.2);
+}
+
+#showCodeOption {
+  margin: 25px auto;
+}
+
+#showCodeButt {
+  background-color: transparent;
+  border: 2px solid cyan;
+  padding: 12px 40px;
+  color: cyan;
+  font-family: "Inconsolata", monospace;
+  cursor: pointer;
+}
+
+.codeOptButt {
+  font-size: auto;
+  padding: 12px 12px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bolder;
+  font-size: 1.25rem;
+  border-radius: 15px;
+  border: 1px solid black;
+  height: 50px;
+  width: 50px;
+  vertical-align: top;
+  text-align: center;
+}
+
+#jsCodeOpt {
+  color: #e6c62f;
+  border: 2px solid #e6c62f;
+}
+
+#htmlCodeOpt {
+  color: red;
+  border: 2px solid red;
+}
+
+#cssCodeOpt {
+  color: blue;
+  border: 2px solid blue;
+}
+
+#showCodeButt:hover {
+  background-color: rgba(0, 255, 255, 0.2);
+}
+
+#codeDispWindow {
+  width: 70%;
+  background-color: black;
+  min-height: 70vh;
+  margin: 0 auto;
+  border-radius: 25px;
+}
+
 html {
   font-size: 20px;
 }
 
 body {
-  width: 100%;
+  width: 100vw;
   height: 100%;
-}
-
-header {
-  height: 90px;
-  background: chartreuse;
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
+  background-color: #17141f;
 }
 
 .headerText {

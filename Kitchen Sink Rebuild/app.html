@@ -1,0 +1,134 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Javascript Kitchen Sink</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--CSS-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <!--Fonts-->
+
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+    <header>
+        <div class="headerText"></div>
+        <nav>
+
+        </nav>
+    </header>
+    <!-- Snippet Grid -->
+    <section id="snipGrid-sect" class="">
+        <h2 id="snipGridTitle">Snippets</h2>
+        <div id="snipGrid">
+
+        </div>
+    </section>
+
+    <section id="snipRender-sect">
+        <div id="snipRender-cont">
+            <img id="backArrow" src="./img/backarrow.svg" alt="">
+            <h2 id="snipRenderTitle">Snippet Title</h2>
+            <p id="snipRenderDesc">Snippet Description</p>
+            <div id="snipRenderWindow">
+                <div id="renderContainer">
+                    <div class="rendHalf">
+                        <p>Lorem ipsum boner sit amet. Knee uk in varze capitalia bueno.</p>
+                    </div>
+                    <div class="rendHalf">
+                        <p>Lorem ipsum boner sit amet. Knee uk in varze capitalia bueno.</p>
+                    </div>
+                    <div class="rendWhole">
+                        <p>Lorem ipsum boner sit amet. Knee uk in varze capitalia bueno.</p>
+                    </div>
+                </div>
+            </div>
+            <h3 id="snipRenderOptionHeader">Options</h3>
+            <div id="insertOptions">
+                <button class="insertOpt">Insert</button>
+                <button class="insertOpt">Overwrite</button>
+            </div>
+            <div id="snipOptions">
+
+            </div>
+            <h3 id="codeDispHeader"></h3>
+            <div id="showCodeOption">
+                <button id="showCodeButt">SHOW CODE</button>
+                <button id="jsCodeOpt" class="snipOptButt">JS</button>
+                <button id="htmlCodeOpt" class="snipOptButt">HTML</button>
+                <button id="cssCodeOpt" class="snipOptButt">CSS</button>
+                <button id="reactCodeOpt" class="snipOptButt">React</button>
+            </div>
+            <div id="codeDispWindow">
+                <div id="codeDispRender">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+
+    </footer>
+
+    <template id="snippet-grid-item">
+        <!-- Snippet Grid Item -->
+        <div class="snipGridItem">
+            <img src="" alt="" class="snipItemImg">
+            <div class="snipItemSect">
+                <h4 class="snipItemTitle">Title</h4>
+                <p class="snipItemDesc"></p>
+            </div>
+        </div>
+        <!-- END Grid Item -->
+    </template>
+
+    <template id="snippet-render-option-button">
+
+    </template>
+
+
+
+    <!-- Add your site or application content here -->
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/fullApp.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga = function () {
+            ga.q.push(arguments)
+        };
+        ga.q = [];
+        ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto');
+        ga('set', 'anonymizeIp', true);
+        ga('set', 'transport', 'beacon');
+        ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+
+</body>
+
+</html>

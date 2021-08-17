@@ -1,0 +1,231 @@
+//Colors
+$bg-purple: rgb(23, 20, 31);
+$bg-lightPurple: rgb(37, 27, 45);
+$blue: rgb(31, 129, 223);
+$orange: rgb(224, 125, 19);
+$purple: rgb(164, 102, 163);
+$white: rgb(184, 205, 205);
+$yellow: rgb(230, 198, 47);
+
+//Fonts
+$title: 'Montserrat', sans-serif;
+$para: 'Inconsolata', monospace;
+
+
+#snipGrid-sect {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#snipGrid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#snipGridTitle {
+    color: $white;
+    font-family: $title;
+}
+
+.snipGridItem {
+    display: flex;
+    flex-direction: row;
+    height: 115px;
+    width: 15%;
+    padding: 2%;
+    background-color: $bg-lightPurple;
+    border-radius: 25px;
+    justify-content: space-around;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.snipGridItem:hover {
+    background-color: $yellow;
+}
+
+.snipGridItem.active {
+    background-color: red;
+}
+
+.snipItemImg {
+    padding-top: 5%;
+    width: 80px;
+    height: 80px;
+}
+
+.snipItemSect {
+    display: flex;
+    flex-direction: column;
+}
+
+.snipItemTitle {
+    color: $purple;
+    font-family: $title;
+    margin: 4px auto;
+}
+
+.snipItemDesc {
+    font-family: $para;
+    color: $blue;
+    margin: 4px auto;
+}
+
+//Snippet Render Section
+#snipRender-sect {
+    position: absolute;
+    left: 100vw;
+    top: 0;
+    height: 100vw;
+    width: 100vw;
+    text-align: center;
+    color: $white;
+}
+
+#snipRender-cont {
+    margin: 0 auto;
+    width: 85%;
+    height: 100%;
+}
+
+#backArrow {
+    position: relative;
+    top: 2%;
+    right: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    filter: invert(1);
+}
+
+#backArrow:hover {
+    filter: invert(0);
+}
+
+#snipRenderTitle {
+    font-family: $title;
+    margin: 10px auto;
+}
+
+#snipRenderDesc {
+    font-family: $para;
+    margin: 10px auto;
+}
+
+#snipRenderWindow {
+    min-height: 70vh;
+    width: 70%;
+    margin: 20px auto;
+    background-color: $bg-lightPurple;
+    border-radius: 25px;
+}
+
+#renderContainer {
+    width: 95%;
+    height: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.rendHalf {
+    width: 45%;
+    padding: 1rem;
+    font-size: 1rem;
+    height: auto;
+    font-family: $para;
+}
+
+.rendWhole {
+    width: 95%;
+    padding: 1rem;
+    height: auto;
+    font-family: $para;
+}
+
+#snipRenderOptionHeader {
+    font-family: $title;
+}
+
+.snipOptButt {
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 12px 40px;
+    color: $white;
+    font-family: $para;
+    cursor: pointer;
+}
+
+.snipOptButt:hover {
+    background-color: rgba($color: white, $alpha: 0.2);
+}
+
+.snipOptButt.orange{
+    border: 2px solid $orange;
+    color: $orange;
+}
+
+.snipOptButt.orange:hover {
+    background-color: rgba($color: $orange, $alpha: 0.2);
+}
+
+#showCodeOption {
+    margin: 25px auto;
+}
+
+#showCodeButt {
+    background-color: transparent;
+    border: 2px solid cyan;
+    padding: 12px 40px;
+    color: cyan;
+    font-family: $para;
+    cursor: pointer;
+}
+
+.codeOptButt {
+    font-size: auto;
+    padding: 12px 12px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 1.25rem;
+    border-radius: 15px;
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    vertical-align: top;
+    text-align: center;
+}
+
+
+#jsCodeOpt {
+    color: $yellow;
+    border: 2px solid $yellow;
+}
+
+#htmlCodeOpt {
+    color: red;
+    border: 2px solid red;
+}
+
+#cssCodeOpt {
+    color: blue;
+    border: 2px solid blue;
+}
+
+
+#showCodeButt:hover {
+    background-color: rgba($color: cyan, $alpha: 0.2);
+}
+
+#codeDispWindow {
+    width: 70%;
+    background-color: black;
+    min-height: 70vh;   
+    margin: 0 auto;
+    border-radius: 25px;
+}
+
