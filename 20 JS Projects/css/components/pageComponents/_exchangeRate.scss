@@ -1,0 +1,65 @@
+#calculator-sect {
+    width: 50%;
+    margin: 0 auto;
+    padding: 6rem 3rem;
+    margin: 10px auto;
+}
+
+#calcContainer {
+    text-align: center;
+}
+
+#mainImg {
+    height: 250px;
+    width: auto;
+}
+
+#convDisp {
+    display: flex;
+    justify-content: center;
+}
+
+.currDispBox {
+    padding: 1rem;
+    margin: 0px 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+#midBox {
+    padding: 1rem;
+    padding: 0 35px;
+}
+
+#swapButton {
+    vertical-align: middle;
+    position: relative;
+    top: 45%;
+    background-color: rgb(34, 165, 34);
+    padding: 1rem;
+    border-radius: 15px;
+    border-color: transparent;
+    color: white;
+}
+
+#swapButton:hover {
+    background-color: darkgreen;
+    cursor: pointer;
+}
+
+.currSel {
+    margin: 15px auto;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.currInp {
+    border: 0px transparent;
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 2px solid black;
+    font-size: 1.5rem;
+    cursor: pointer;
+}

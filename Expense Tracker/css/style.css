@@ -1,548 +1,43 @@
-.darkText h1, .darkText h2, .darkText h3, .darkText h4, .darkText h5, .darkText h6, .darkText p {
-  color: black;
+body {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
-.lightText h1, .lightText h2, .lightText h3, .lightText h4, .lightText h5, .lightText h6, .lightText p {
-  color: white;
-}
-
-.bold {
-  font-weight: bolder;
-}
-
-.pt5 {
-  opacity: 0.5;
-}
-
-.pt7 {
-  opacity: 0.7;
-}
-
-.pt9 {
-  opacity: 0.9;
-}
-
-#buttonChangesTextColorSect {
-  width: 100%;
-  border: 1px solid black;
-  padding: 1em;
-}
-
-#buttonChangesTextColorCont {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#changeTextColorHeaderCont {
-  width: 33%;
-  margin-left: auto;
-  margin-right: auto;
+#title {
+  width: 50%;
   text-align: center;
+  margin: 0 auto;
 }
 
-#changeTextColorButtonCont {
+#tracker {
   width: 25%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+  margin: 0 auto;
 }
 
-#changeTextColor {
-  width: 100%;
+#bal-cont {
+  height: 100px;
+  position: relative;
+  left: 18%;
 }
 
-#buttonChangesImageSect {
-  width: 100%;
-  padding: 1em;
-  border: 1px solid black;
+#balText-cont {
+  position: absolute;
+  bottom: 0;
 }
 
-#buttonChangesImageCont {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+#balText-cont h3 {
+  padding: 0 0 10px 0;
+  margin: 0 auto;
 }
 
-#buttonChangesImageHeaderCont {
-  width: 33%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+#balText-cont p {
+  margin: 0 auto;
 }
 
-#buttonChangesImageImageCont {
-  width: 40%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#changingImage {
-  width: 150px;
-  height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1em;
-}
-
-#buttonChangesImageButtonCont {
-  text-align: center;
-}
-
-#buttonPushesToArraySect {
-  width: 100%;
-  border: 1px solid black;
-  padding: 1em;
-}
-
-#buttonPushesToArrayCont {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#buttonPushesToArrayHeaderCont {
-  width: 33%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-
-#buttonPushesToArrayArrayCont {
-  width: 30%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-
-#buttonPushesToArrayButtonCont {
-  min-width: 210px;
-  max-width: 220px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-
-#pushToArrayBasic {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-
-#changeTextColor {
-  width: 100%;
-}
-
-#buttonsOperateValueSect {
-  width: 100%;
-  padding: 1em;
-}
-
-#buttonsOperateValueCont {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#buttonsOperateValueHeaderCont {
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-
-#buttonValueCont {
-  width: 25%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-
-#buttonsOperateValue {
-  width: 80%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.basicOperandButtonCont {
-  width: 16.666666667;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.basicOperandButton {
-  width: 100%;
-  height: 20px;
-}
-
-#buttonSlideshowBasicSect {
-  width: 100%;
-  padding: 1em;
-}
-
-#buttonSlideshowBasicCont {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#buttonSlideshowBasicHeaderCont {
-  width: 33%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-
-#buttonSlideshowImageCont {
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#buttonSlideshowImage {
-  width: 150px;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  padding: 1em;
-}
-
-#buttonSlideshowBasicButtonCont {
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.slideshowButton {
-  width: 200px;
-  height: 30px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-#displayArrayBasicSect {
-  width: 100%;
-  padding: 1em;
-  border: 1px solid black;
-}
-
-#displayArrayBasicCont {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#displayArrayBasicHeaderCont {
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-
-#displayArrayBasicDisplayCont {
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-
-#displayArrayBasicButtonAreaCont {
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.displayArrayBasicButtonCont {
-  margin: 5px;
-}
-
-#buttonPushesToArrayLoopSect {
-  width: 100%;
-  border: 1px solid black;
-  padding: 1em;
-}
-
-#buttonPushesToArrayLoopCont {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#buttonPushesToArrayLoopHeaderCont {
-  width: 33%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-
-#buttonPushesToArrayLoopArrayCont {
-  width: 30%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-
-#buttonPushesToArrayLoopDisplay {
-  word-break: break-all;
-}
-
-#buttonPushesToArrayLoopButtonCont {
-  min-width: 210px;
-  max-width: 220px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-
-#pushToArrayLoopBasic {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-
-#applyClassWithButtonSect {
-  width: 100%;
-  padding: 1em;
-  border: 1px solid black;
-}
-
-#applyClassWithButtonCont {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#applyClassWithButtonHeaderCont {
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-
-#applyClassWithButtonImageCont {
-  width: 40%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2em;
-  margin-bottom: 2em;
-}
-
-#classedImage {
-  width: 50%;
-  height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.activeImage {
-  border: 15px solid cyan;
-}
-
-#applyClassWithButtonButtonCont {
-  width: 50%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-
-#applyImageClassButton {
-  height: 20px;
-  width: 66%;
-}
-
-#disableButtonSect {
-  width: 100%;
-  padding: 1em;
-  border: 1px solid black;
-}
-
-#disableButtonCont {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#disableButtonHeaderCont {
-  width: 50%;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#disableButtonHeader {
-  width: 100%;
-}
-
-#toggledButton {
-  width: 33%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-
-#toggledButtonTextCont {
-  width: 20%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-
-#toggledButtonText {
-  display: none;
-}
-
-#buttonControls {
-  width: 33%;
-  margin-left: auto;
-  margin-right: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.buttonControlCont {
-  margin: 1em;
-}
-
-#renderJsonToDivSect {
-  width: 100%;
-  padding: 1em;
-}
-
-#renderJsonToDivCont {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#renderJsonToDivHeaderCont {
-  width: 33%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-
-#renderJsonToDivDisplayCont {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-bottom: 20px;
-}
-
-.renderItem {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border: 1px solid black;
-  margin: 1em;
-  border-radius: 25px;
-}
-
-.renderItemHeader {
-  text-align: center;
-  width: 60%;
-}
-
-.renderItemText {
-  width: 40%;
-  text-align: center;
-  padding-right: 90px;
-  padding-top: 10px;
-}
-
-#jsonDisplayCont {
-  width: 40%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  padding: 1em;
-  border: 1px solid black;
-  border-radius: 25px;
-}
-
-#jsonDisplayButtonCont {
-  width: 25%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 25px;
-  text-align: center;
-}
-
-#jsonDisplayButton {
-  height: 30px;
-  width: 100%;
-}
-
-#renderJsonToMultiSect {
-  width: 100%;
-  padding: 1em;
-}
-
-.renderJsonToMultiCont {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.renderJsonToMultiHeaderCont {
-  width: 50%;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.renderJsonToMultiObjectCont {
-  width: 100%;
+#incExp-cont {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -555,18 +50,13 @@
           justify-content: space-evenly;
 }
 
-.multiObject {
-  width: 33%;
-  border: 1px solid black;
-  padding: 2em;
-  margin: 3em;
+.incExp-child {
+  padding: .5rem 1rem 1rem 1rem;
+  text-align: center;
 }
 
-.multiObjectItemItem p {
-  text-align: right;
-}
-
-.multiObjectItemItem {
+#historyTitle-cont {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -574,35 +64,118 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  height: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10px auto;
+}
+
+#historyTitle-cont h3 {
+  margin: 0;
+}
+
+.histItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+  border: 1px solid black;
+  margin: 5px auto;
+}
+
+.histItem.pos {
+  border-right: 5px solid green;
+}
+
+.histItem.neg {
+  border-right: 5px solid red;
+}
+
+.histItemTitle {
+  padding-left: 3%;
+}
+
+.histItemType-cont {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  right: 25%;
+}
+
+.historyItemType-text {
+  padding-right: 4px;
+}
+
+.historyItemImg {
+  height: 25px;
+  width: 25px;
+  position: relative;
+  top: 9px;
+  padding: 2px;
+}
+
+.histItemValue {
+  position: absolute;
+  right: 3%;
+}
+
+#transaction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-#renderJsonToMultiButtonCont {
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#renderJsonToMultiButton {
+.formItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
-  height: 30px;
+  margin: 7px 0;
 }
 
-#dynamArrayButtonCont {
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
+.formItem.half {
+  width: 45%;
 }
 
-.dynamArrayButton {
-  width: 100%;
-  height: 30px;
+#fullHist {
+  position: absolute;
+  top: 5%;
+  left: 35%;
+  width: 30vw;
+  height: 90vh;
+  background-color: chocolate;
+  border-radius: 25px;
 }
 
-body {
-  width: 100%;
-  height: 100%;
+#fullHist-cont {
+  position: relative;
+  top: 7.5%;
+  left: 10%;
+  width: 80%;
+  height: 85%;
+  border: 1px solid black;
 }
 /*# sourceMappingURL=style.css.map */

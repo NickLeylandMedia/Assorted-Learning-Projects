@@ -30,223 +30,94 @@
       
     </nav>
   </header>
-
-  <section id="buttonChangesTextColorSect">
-    <div id="buttonChangesTextColorCont">
-      <div id="changeTextColorHeaderCont">
-        <h2 id="changeTextColorHeader">CHANGE COLOR OF TEXT WITH A BUTTON</h2>
-      </div>
-      <div id="changeTextColorButtonCont">
-        <button id="changeTextColor" onclick="changeHeaderColor()">CLICK ME</button>
-      </div>
-    </div>
+  <section id="title">
+    <h1>Expense Tracker</h1>
   </section>
-
-  <section id="buttonChangesImageSect">
-    <div id="buttonChangesImageCont">
-      <div id="buttonChangesImageHeaderCont">
-        <h2 id="buttonChangesImageHeader">CHANGE IMAGE WITH A BUTTON</h2>
-      </div>
-      <div id="buttonChangesImageImageCont">
-        <img id="changingImage" src="./img/happy.png">
-      </div>
-      <div id="buttonChangesImageButtonCont">
-        <button id="changeImage" onclick="changeImageBasic()">CLICK ME</button>
-      </div>
-    </div>
-  </section>
-
-  <section id="buttonSlideshowBasicSect">
-    <div id="buttonSlideshowBasicCont">
-      <div id="buttonSlideshowBasicHeaderCont">
-        <h2 id="buttonSlideshowBasicHeader">BASIC IMAGE SLIDESHOW (OPERATED WITH BUTTONS)</h2>
-      </div>
-      <div id="buttonSlideshowImageCont">
-        <img id="buttonSlideshowImage" src="./img/cheesy.png">
-      </div>
-      <div id="buttonSlideshowBasicButtonCont">
-        <button class="slideshowButton" id="slideshowBack">CLICK ME</button>
-        <button class="slideshowButton" id="slideshowForward">OR ME</button>
-      </div>
-    </div>
-  </section>
-
-  <section id="displayArrayBasicSect">
-    <div id="displayArrayBasicCont">
-      <div id="displayArrayBasicHeaderCont">
-        <h2 id="displayArrayBasicHeader">BASIC ARRAY DISPLAY</h2>
-      </div>
-      <div id="displayArrayBasicDisplayCont">
-        <p id="basicArrayText"></p>
-      </div>
-      <div id="displayArrayBasicButtonAreaCont">
-        <div class="displayArrayBasicButtonCont"><button id="dispArray1" onclick="changeDisplayArrayBasicFWD()">Click me for example text!</button></div>
-        <div class="displayArrayBasicButtonCont"><button id="dispArray2" onclick="changeDisplayArrayBasicBCK()">Click me for sample text!</button></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="buttonPushesToArraySect">
-    <div id="buttonPushesToArrayCont">
-      <div id="buttonPushesToArrayHeaderCont">
-        <h2 id="buttonPushesToArrayHeader">PUSH A VALUE TO AN ARRAY WITH A BUTTON</h2>
-      </div>
-      <div id="buttonPushesToArrayArrayCont">
-        <p id="buttonPushesToArrayDisplay">PLACEHOLDER</p>
-      </div>
-      <div id="buttonPushesToArrayButtonCont">
-        <button id="pushToArrayBasic" onclick="pushValueToArrayBasic()">PUUUUUUUUUUSH!!</button>
-      </div>
-    </div>
-  </section>
-
-  <section id="buttonPushesToArrayLoopSect">
-    <div id="buttonPushesToArrayLoopCont">
-      <div id="buttonPushesToArrayLoopHeaderCont">
-        <h2 id="buttonPushesToArrayLoopHeader">PUSH A VALUE TO AN ARRAY WITH A BUTTON (INCREMENTING)</h2>
-      </div>
-      <div id="buttonPushesToArrayLoopArrayCont">
-        <p id="buttonPushesToArrayLoopDisplay">PLACEHOLDER</p>
-      </div>
-      <div id="buttonPushesToArrayLoopButtonCont">
-        <button id="pushToArrayLoopBasic" onclick="pushValueToArrayLoopBased()">PUUUUUUUUUUSH!!</button>
-      </div>
-    </div>
-  </section>
-
-  <section id="buttonsOperateValueSect">
-    <div id="buttonsOperateValueCont">
-      <div id="buttonsOperateValueHeaderCont">
-        <h2 id="buttonsOperateValueHeader">OPERATE VALUE WITH BUTTONS</h2>
-      </div>
-      <div id="buttonValueCont">
-        <p id="buttonValue">VALUE</p>
-      </div>
-      <div id="buttonsOperateValue">
-        <div class="basicOperandButtonCont"><button class="basicOperandButton" id="minusOneHundredBasic" onclick="minusOneHundred()">-100 <</button></div>
-        <div class="basicOperandButtonCont"><button class="basicOperandButton" id="minusTenBasic" onclick="minusTen()">-10 <</button></div>
-        <div class="basicOperandButtonCont"><button class="basicOperandButton" id="minusOneBasic" onclick="minusOne()">-1 <</button></div>
-        <div class="basicOperandButtonCont"><button class="basicOperandButton" id="plusOneBasic" onclick="plusOne()"> +1</button></div>
-        <div class="basicOperandButtonCont"><button class="basicOperandButton" id="plusTenBasic" onclick="plusTen()"> +10</button></div>
-        <div class="basicOperandButtonCont"><button class="basicOperandButton" id="plusOneHundredBasic" onclick="plusOneHundred()"> +100</button></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="applyClassWithButtonSect">
-    <div id="applyClassWithButtonCont">
-      <div id="applyClassWithButtonHeaderCont">
-        <h2>APPLY CLASS TO IMAGE WITH BUTTON</h2>
-      </div>
-      <div id="applyClassWithButtonImageCont">
-        <img class="" id="classedImage" src="./img/monalisa.jpg">
-      </div>
-      <div id="applyClassWithButtonButtonCont">
-        <button id="applyImageClassButton" onclick="addClass()">CHANGE IMAGE CLASS</button>
-      </div>
-    </div>
-  </section>
-
-  <section id="disableButtonSect">
-    <div id="disableButtonCont">
-      <div id="disableButtonHeaderCont">
-        <h2 id="disableButtonHeader">ENABLE/DISABLE BUTTON</h2>
-      </div>
-      <div id="toggledButton">
-        <button id="controlledButton" onclick="toggledButtonText()">I AM THE TOGGLED BUTTON</button>
-      </div>
-      <div id="toggledButtonTextCont">
-        <p id="toggledButtonText">HEAR ME ROAR</p>
-      </div>
-      <div id="buttonControls">
-        <div class="buttonControlCont"><button id="enableButtonButton" onclick="enableButton()">Enable</button></div>
-        <div class="buttonControlCont"><button id="disableButtonButton" onclick="disableButton()">Disable</button></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="renderJsonToDivSect">
-    <div id="renderJsonToDivCont">
-      <div id="renderJsonToDivHeaderCont">
-        <h2 id="renderJsonToDivHeader">RENDER JSON TO DIV</h2>
-      </div>
-      <div id="renderJsonToDivDisplayCont">
-        <div class="renderItem"><h3 class="renderItemHeader">NAME:</h2><p class="renderItemText" id="renderName">PLACEHOLDER</p></div>
-        <div class="renderItem"><h3 class="renderItemHeader">AGE:</h2><p class="renderItemText" id="renderAge">PLACEHOLDER</p></div>
-        <div class="renderItem"><h3 class="renderItemHeader">LOCATION:</h2><p class="renderItemText" id="renderLocation">PLACEHOLDER</p></div>
-        <div class="renderItem"><h3 class="renderItemHeader">FAVORITE COLOR:</h2><p class="renderItemText" id="renderFavColor">PLACEHOLDER</p></div>
-        <div class="renderItem"><h3 class="renderItemHeader">FAVORITE FOOD:</h2><p class="renderItemText" id="renderFavFood">PLACEHOLDER</p></div>
-      </div>
-      <div id="jsonDisplayCont">
-        <p id="jsonDisplayText">JSON PLACEHOLDER</p>
-      </div>
-      <div id="jsonDisplayButtonCont">
-        <button id="jsonDisplayButton" onclick="renderJsonToDivs()">RENDER</button>
-      </div>
-    </div>
-  </section>
-
-  <section id="renderJsonToMultiSect">
-    <div class="renderJsonToMultiCont">
-      <div class="renderJsonToMultiHeaderCont">
-        <h2 class="renderJsonToMultiHeader">RENDER JSON TO MULTI (STATIC)</h2>
-      </div>
-      <div class="renderJsonToMultiObjectCont">
-
-        <div class="multiObject">
-          <div class="multiObjectItem">
-            <div class="multiObjectItemItem"><h3 class="multiName" id="multiNameOne">NAME</h3></div>
-            <div class="multiObjectItemItem"><h4>Age</h4><p class="multiText" id="multiAgeOne">PH</p></div>
-            <div class="multiObjectItemItem"><h4>Location</h4><p class="multiText" id="multiLocationOne">PH</p></div>
-            <div class="multiObjectItemItem"><h4>Favorite Color</h4><p class="multiText" id="multiColorOne">PH</p></div>
-            <div class="multiObjectItemItem"><h4>Favorite Food</h4><p class="multiText" id="multiFoodOne">PH</p></div>
-          </div>
+  <section id="tracker">
+    <div id="balExpInc-cont">
+      <div id="bal-cont">
+        <div id="balText-cont">
+          <h3>BALANCE</h3>
+          <p id="balText">$8420</p>
         </div>
-
-        <div class="multiObject">
-          <div class="multiObjectItem">
-            <div class="multiObjectItemItem"><h3 class="multiName" id="multiNameTwo">NAME</h3></div>
-            <div class="multiObjectItemItem"><h4>Age</h4><p class="multiText" id="multiAgeTwo">PH</p></div>
-            <div class="multiObjectItemItem"><h4>Location</h4><p class="multiText" id="multiLocationTwo">PH</p></div>
-            <div class="multiObjectItemItem"><h4>Favorite Color</h4><p class="multiText" id="multiColorTwo">PH</p></div>
-            <div class="multiObjectItemItem"><h4>Favorite Food</h4><p class="multiText" id="multiFoodTwo">PH</p></div>
-          </div>
-        </div>
-          
-        <div class="multiObject">
-          <div class="multiObjectItem">
-            <div class="multiObjectItemItem"><h3 class="multiName" id="multiNameThree">NAME</h3></div>
-            <div class="multiObjectItemItem"><h4>Age</h4><p class="multiText" id="multiAgeThree">PH</p></div>
-            <div class="multiObjectItemItem"><h4>Location</h4><p class="multiText" id="multiLocationThree">PH</p></div>
-            <div class="multiObjectItemItem"><h4>Favorite Color</h4><p class="multiText" id="multiColorThree">PH</p></div>
-            <div class="multiObjectItemItem"><h4>Favorite Food</h4><p class="multiText" id="multiFoodThree">PH</p></div>
-          </div>
-        </div>
-
       </div>
-      <div id="renderJsonToMultiButtonCont">
-        <button id="renderJsonToMultiButton" onclick="renderManyDivs()">RENDER</button>
+      <div id="incExp-cont">
+        <div id="inc-cont" class="incExp-child">
+          <h3>INCOME</h3>
+          <p id="incText">$9001</p>
+        </div>
+        <div id="exp-cont" class="incExp-child">
+          <h3>EXPENSE</h3>
+          <p id="expText">$400</p>
+        </div>
+      </div>
+    </div>
+    <div id="history-cont">
+      <div id="historyTitle-cont">
+        <h3>History</h3>
+        <button id="showHist">Show All</button>
       </div>
 
-      <!--DYNAMIC JSON LISTING-->
-      <div id="renderJsonToMultiCont">
-        <div class="renderJsonToMultiHeaderCont">
-          <h2 class="renderJsonToMultiHeader">RENDER JSON TO MULTI (DYNAMIC)</h2>
-        </div>
-        <div class="renderJsonToMultiObjectCont" id="dynamCont">
-
-          
-  
-        </div>
-        <div id="dynamArrayButtonCont">
-          <button class="dynamArrayButton" onclick="dynamicArray()">DYNAMIC ARRAY</button>
-        </div>
-      </div>  
       
+
     </div>
-
-
+    <div id="newEntry-cont">
+      <h3>Add New Transaction</h3>
+      <form action="" id="transaction">
+        <div class="formItem">
+          <label for="transTitle">Title</label>
+          <input type="text" name="transTitle" id="transTitle">
+        </div>
+        <div class="formItem half">
+          <label for="transType">Type</label>
+          <select name="transType" id="transType">
+            <option value="Car Insurance">Car Insurance</option>
+            <option value="Car Maintenance">Car Maintenance</option>
+            <option value="Car Registration">Car Registration</option>
+            <option value="Car Repair">Car Repair</option>
+            <option value="Electric Bill">Electric Bill</option>
+            <option value="Electrical Work">Electrical Work</option>
+            <option value="Flights">Flights</option>
+            <option value="Games">Games</option>
+            <option value="Gas">Gas</option>
+            <option value="Groceries">Groceries</option>
+            <option value="Home Improvement">Home Improvement</option>
+            <option value="Hotels">Hotels</option>
+            <option value="Meals">Meals</option>
+            <option value="Movies">Movies</option>
+            <option value="Phone Bill">Phone Bill</option>
+            <option value="Plumbing Work">Plumbing Work</option>
+            <option value="Taxes">Taxes</option>
+            <option value="Water Bill">Water Bill</option>
+          </select>
+        </div>
+        <div class="formItem half">
+          <label for="transVal">Value</label>
+          <input type="number" name="transVal" id="transVal" placeholder="0.00">
+        </div>
+        <div class="formItem">
+          <input type="submit" value="SUBMIT" onclick="">
+        </div>
+      </form>
+    </div>
   </section>
+  <section id="fullHist">
+    <div id="fullHist-cont">
+
+    </div>
+  </section>
+
+  <template id="historyItem">
+    <div class="histItem">
+      <p class="histItemTitle">This is the expense</p>
+      <div class="histItemType-cont">
+        <p class="historyItemType-text">TYPE</p>
+        <img src="./img/car.svg" alt="" class="historyItemImg">
+        <img src="./img/wrench.svg" alt="" class="historyItemImg">
+      </div>
+      <p class="histItemValue">+$500</p>
+    </div>
+  </template>
  
 
   <!-- Add your site or application content here -->
@@ -262,19 +133,7 @@
   <script src="https://www.google-analytics.com/analytics.js" async></script>
 
 
-  <template id="person-template">
-
-    <div class="multiObject">
-      <div class="multiObjectItem">
-        <div class="multiObjectItemItem"><h3 class="dynamicName">NAME</h3></div>
-        <div class="multiObjectItemItem"><h4>Age</h4><p class="dynamicAge">PH</p></div>
-        <div class="multiObjectItemItem"><h4>Location</h4><p class="dynamicLocation">PH</p></div>
-        <div class="multiObjectItemItem"><h4>Favorite Color</h4><p class="dynamicColor">PH</p></div>
-        <div class="multiObjectItemItem"><h4>Favorite Food</h4><p class="dynamicFood">PH</p></div>
-      </div>
-    </div>
-
-  </template>
+  
 
 
 </body>

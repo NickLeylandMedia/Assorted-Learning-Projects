@@ -11,6 +11,42 @@ let date = {
 
 }
 
+/* Fetch API */
+let fetchAPI = {
+    //Fetch monster.json
+    loadMon() {
+        return fetch('./json/monster.json')
+        .then(res => res.json())
+        .then(data => fetchAPI.monsterData = data)
+    },
+    monsterData: {},
+    //Fetch deck of cards
+    newDeck(x) {
+        let string = String(`http://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=${x}`)
+        return fetch(string)
+        .then(res => res.json())
+        .then(data => {
+            fetchAPI.deckID = data.deck_id
+            renderSnipContent('full', JSON.stringify(data), 'append')
+        })
+    },
+    deckID: '',
+    drawX(x) {
+        let string = String(`http://deckofcardsapi.com/api/deck/${this.deckID}/draw/?count=${x}`)
+        return fetch(string)
+        .then(res => res.json())
+        .then(data => renderSnipContent('full', JSON.stringify(data), 'append'))
+    },
+    shuffle() {
+        let string = String(`http://deckofcardsapi.com/api/deck/${fetchAPI.deckID}/shuffle/`)
+        return fetch(string)
+        .then(res => res.json())
+        .then(data => console.log(data))
+    },
+}
+
+
+
 /* Intersection Observer API Snippet */
 
 /* Javascript Classes */
@@ -23,6 +59,7 @@ let appPack = []
 let snipPack = [
     //{Name: 'IntersectionObserver', DisplayName: 'Intersection Observer API', ShortName: 'I-O/API', Description: '', Icon: './img/arrownsew.svg', Image: 'img.jpg', Enabled: true},
     {Name: 'Date', DisplayName: 'Date API', ShortName: 'Date', Description: 'Get and manipulate the date and time.', Icon: './img/calendar.svg', Image: 'img.jpg', Enabled: true},
+    {Name: 'FetchAPI', DisplayName: 'Fetch API', ShortName: 'Fetch', Description: '', Icon: './img/fetch.svg', Image: 'img.jpg', Enabled: true},
     {Name: 'IntersectionObserver', DisplayName: 'Intersection Observer API', ShortName: 'I-O/API', Description: '', Icon: './img/arrownsew.svg', Image: 'img.jpg', Enabled: true},
     {Name: 'Objects', DisplayName: 'Objects', ShortName: 'Obj', Description: 'All about objects, and how to utilize them.', Icon: './img/obj.svg', Image: 'img.jpg', Enabled: true},
 ]
@@ -30,6 +67,7 @@ let snipPack = [
 /* Snippet Content - JSON Package */
 let snipContentPack = [
     {Name: 'Date', Options: [{Text: 'Show Current Date', Func: date.current},]},
+    {Name: 'FetchAPI', Options: []},
     {Name: 'IntersectionObserver', Options: []},
     {Name: 'Objects', Options: []},
 ]

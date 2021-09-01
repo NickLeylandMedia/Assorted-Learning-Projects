@@ -1,22 +1,152 @@
 //Imports
-@import './nlmMasterStyleMap';
-@import './Snippets/buttonChangesTextColor';
-@import './Snippets/buttonChangesImage';
-@import './Snippets/buttonPushesToArray';
-@import './Snippets/buttonsOperateValueSect';
-@import './Snippets/buttonSlideshowSect';
-@import './Snippets/displayArrayBasicSect';
-@import './Snippets/buttonPushesToArrayLoop';
-@import './Snippets/applyClassWithButtonSect';
-@import './Snippets/disableButtonSect';
-@import './Snippets/renderJsonToDiv';
-@import './Snippets/renderJsonToMultiSect';
 
+//Styles
 body {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
+#title {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#tracker {
+    width: 25%;
+    margin: 0 auto;
+}
+
+#bal-cont {
+    height: 100px;
+    position: relative;
+    left: 18%;
+}
+
+#balText-cont {
+    position: absolute;
+    bottom: 0;
+
+    h3 {
+        padding: 0 0 10px 0;
+        margin: 0 auto;
+    }
+
+    p {
+        margin: 0 auto;
+    }
+
+}
+
+#incExp-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.incExp-child {
+    padding: .5rem 1rem 1rem 1rem;
+    text-align: center;
+}
+
+//History
+#historyTitle-cont {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    justify-content: space-between;
+    margin: 10px auto;
+
+    h3 {
+        margin: 0;
+    }
+}
+
+.histItem {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    border: 1px solid black;
+    margin: 5px auto;
+}
+
+.histItem.pos {
+    border-right: 5px solid green;
+}
+
+.histItem.neg {
+    border-right: 5px solid red;
+}
+
+.histItemTitle {
+   padding-left: 3%;
+}
+
+.histItemType-cont {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    right: 25%;
+}
+
+.historyItemType-text {
+    padding-right: 4px;
+}
+
+.historyItemImg {
+    height: 25px;
+    width: 25px;
+    position: relative;
+    top: 9px;
+    padding: 2px;
+}
+
+.histItemValue {
+    position: absolute;
+    right: 3%;
+}
+
+//Form
+#transaction {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.formItem {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 7px 0;
+}
+
+.formItem.half {
+    width: 45%;
+}
+
+#fullHist {
+    position: absolute;
+    top: 5%;
+    left: 35%;
+    width: 30vw;
+    height: 90vh;
+    background-color: chocolate;
+    border-radius: 25px;
+}
+
+#fullHist-cont {
+    position: relative;
+    top: 7.5%;
+    left: 10%;
+    width: 80%;
+    height: 85%;
+    border: 1px solid black;
+}
 
 
 
