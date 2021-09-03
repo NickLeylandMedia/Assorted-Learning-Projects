@@ -166,8 +166,18 @@ body {
   left: 35%;
   width: 30vw;
   height: 90vh;
+  max-height: 90vh;
   background-color: chocolate;
   border-radius: 25px;
+}
+
+#closeFullHist {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  right: 3%;
+  top: 3%;
+  cursor: pointer;
 }
 
 #fullHist-cont {
@@ -176,6 +186,44 @@ body {
   left: 10%;
   width: 80%;
   height: 85%;
+  max-height: 85%;
+  overflow-y: auto;
   border: 1px solid black;
+}
+
+#delButt-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  width: 60%;
+  left: 20%;
+  height: 40px;
+  bottom: 1.5%;
+}
+
+#delEvents {
+  position: absolute;
+  width: 25%;
+  padding: .25em 1em;
+}
+
+#conDelEv {
+  padding: .25em 1em;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.delReady {
+  background-color: rgba(255, 0, 0, 0.3);
 }
 /*# sourceMappingURL=style.css.map */

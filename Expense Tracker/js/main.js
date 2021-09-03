@@ -3,7 +3,8 @@ let log = {
     Active() {
         return log.Full.slice(-3).reverse()
     }, 
-    Full : []
+    Full : [],
+    DelLog: [],
 }
 
 let gameRefs = {
@@ -12,7 +13,10 @@ let gameRefs = {
     },
     Expense: 0,
     Income: 0,
-    ID: 0
+    ID: 0,
+    Del: false,
+    Targ: '',
+    Queries: [],
 }
 
 /* Classes */
@@ -22,6 +26,7 @@ class Transaction {
         this.Type = type
         this.Val = +val
         this.ID = assignID()
+        this.Del = false
     }
 }
 
@@ -80,19 +85,21 @@ function assignID() {
 }
 
 //Render Short History
-function transItemRender(arr) {
-    document.querySelectorAll('.histItem').forEach(e => e.remove());
-
+function transItemRender(arr, par, clr) {
+    //Logic for Clearing Elements
+    if (clr === true) {
+        document.querySelectorAll('.histItem').forEach(e => e.remove());
+    } 
+    
     arr.forEach((cur) => {
-        const parent = document.getElementById('history-cont')
+        const parent = document.getElementById(par)
         const temp = document.getElementById('historyItem').content.cloneNode(true)
         //Main Content - Title
         temp.querySelector('.histItemTitle').innerHTML = cur.Text
         //Main Content - Type
         temp.querySelector('.historyItemType-text').innerHTML = cur.Type 
-
-        
-        
+        //Set ID
+        temp.querySelector('.histItem').id = cur.ID
 
         //Positive - Negative Style + Value Population
         if (cur.Val > 0) {
@@ -111,34 +118,49 @@ function transItemRender(arr) {
         convNodes[0].src = transTypes[index].ImageOne
         convNodes[1].src = transTypes[index].ImageTwo
 
-        //Balance/Expense/Income
-        //Balance
-       
-
-        
-
-
-
         //Append to Document
         parent.appendChild(temp)
     })
-
+    //Expense Calculation + Population
     let neg = log.Full.filter(val => val.Val < 0)
     let negArr =[]
     let negVals = neg.forEach((cur) => negArr.push(cur.Val) )
     let negOut = negArr.reduce((a,b) => a += b, 0)
     gameRefs.Expense = negOut
 
+    //Income Calculation + Population
     let pos = log.Full.filter(val => val.Val >= 0)
     let posArr =[]
     let posVals = pos.forEach((cur) => posArr.push(cur.Val) )
     let posOut = posArr.reduce((a, b) => a += b, 0)
     gameRefs.Income = posOut
-    console.log(posOut)
+}
 
+function deleteMode() {
+    document.getElementById('delEvents').classList.toggle('delReady')
+    gameRefs.Queries.forEach((cur) => {
+        cur.addEventListener('click', (e) => {
+            let id = e.target.closest('.histItem').id
+            if (document.getElementById('delEvents').classList.contains('delReady') && !e.target.classList.contains('delReady')) {
+                e.target.closest('.histItem').classList.toggle('delReady')
+                log.Full[indexItemID(log.Full, id)].Del = true
+            } else {
+                e.target.closest('.histItem').classList.toggle('delReady')
+                log.Full[indexItemID(log.Full, id)].Del = false
+            }
+        })
+    })
+}
 
-
-
+function confDel() {
+    let targets = log.Full.filter((term) => term.Del === true)
+    let idArr = targets.map((term) => term.ID)
+    idArr.forEach((cur) => {
+        let index = indexItemID(log.Full, cur)
+        log.Full.splice(index, 1)
+        updateUI()
+        updateUI()
+    })
 }
 
 //Universal Render
@@ -156,17 +178,27 @@ function getIndex(arr, srch) {
     return "not in array"
 }
 
+function indexItemID(arr, srch) {
+    for (i = 0; i < arr.length; i++) {
+        if (srch == arr[i].ID) {
+            return i
+        }
+    }
+    return "not in array"
+}
+
+
 //Update UI
 function updateUI() {
     let expenseVal = gameRefs.Expense
     //Balance
     univRender('balText', `$${gameRefs.Balance()}`)
     //Expense
-    univRender('expText', `-$${expenseVal *= -1}`)
+    univRender('expText', `$${expenseVal *= -1}`)
     //Income
     univRender('incText', `$${gameRefs.Income}`)
     //History
-    transItemRender(log.Active())
+    transItemRender(log.Active(), 'history-cont', true)
 }
 
 
@@ -176,5 +208,23 @@ document.getElementById('transaction').addEventListener('submit', (e) => {
     updateUI()
     updateUI()
 })
+
+document.getElementById('showHist').addEventListener('click', (e) => {
+    document.getElementById('fullHist').classList.toggle('hidden')
+    transItemRender(log.Full, 'fullHist-cont')
+})
+
+document.getElementById('closeFullHist').addEventListener('click', (e) => {
+    document.getElementById('fullHist').classList.toggle('hidden')        
+})
+
+setInterval(() => {
+    gameRefs.Queries = Array.from(document.querySelectorAll('#fullHist-cont .histItem'))
+}, 5);
+
+
+
+
+
 
 updateUI()
